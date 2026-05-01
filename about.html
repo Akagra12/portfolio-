@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona - Akagra Gangwar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <canvas id="particleCanvas"></canvas>
+    <nav class="navbar" id="navbar">
+        <div class="nav-center">
+            <a href="index.html" class="nav-logo-box">akagra<span class="logo-dot">.</span>dev</a>
+            <a href="index.html" class="nav-home" aria-label="Home">⌂</a>
+            <a href="projects.html" class="nav-link">PROJECTS</a>
+            <a href="credentials.html" class="nav-link">CREDENTIALS</a>
+            <a href="skills.html" class="nav-link">FORGE</a>
+            <a href="about.html" class="nav-link active">PERSONA</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu"><a href="index.html" class="mobile-link">HOME</a><a href="projects.html" class="mobile-link">PROJECTS</a><a href="credentials.html" class="mobile-link">CREDENTIALS</a><a href="skills.html" class="mobile-link">FORGE</a><a href="about.html" class="mobile-link">PERSONA</a></div>
+
+    <section class="page-hero"><div class="container">
+        <span class="section-tag cyan">WHO I AM</span>
+        <h1 class="page-title-big">Persona</h1>
+    </div></section>
+
+    <section class="section"><div class="container">
+        <div class="persona-grid">
+            <div class="persona-left">
+                <h2 class="persona-hi">Hi, I'm Akagra</h2>
+                <p>B.Tech CSE (AI) student at <strong class="cyan-text">Bennett University</strong> — CGPA <strong class="cyan-text">8.39 / 10</strong>, graduating 2027. I build at the intersection of full-stack engineering and applied ML.</p>
+                <p>My current focus: AI-powered applications (Whisper + LLMs), real-time computer vision systems, and scalable MERN stack platforms. I believe in clean architecture, meaningful products, and building systems that solve real-world problems.</p>
+                <div class="persona-badges">
+                    <span class="p-badge">Greater Noida, India</span>
+                    <span class="p-badge">Bennett University · 2027</span>
+                </div>
+            </div>
+            <div class="persona-right">
+                <h3>Education</h3>
+                <div class="edu-card">
+                    <div class="edu-logo">BU</div>
+                    <div class="edu-info">
+                        <h4>Bennett University</h4>
+                        <p class="cyan-text">B.Tech in Computer Science & Engineering (AI)</p>
+                        <p class="edu-year">2023 – 2027</p>
+                        <div class="edu-stat">
+                            <span class="edu-cgpa">CGPA <strong class="cyan-text">8.39</strong> /10</span>
+                            <span class="edu-yr-badge">3rd Year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-row">
+            <div class="stat-box"><span class="stat-num cyan-text" data-count="7">0</span><span class="stat-plus">+</span><p>Projects Built</p></div>
+            <div class="stat-box"><span class="stat-num cyan-text" data-count="13">0</span><span class="stat-plus">+</span><p>GitHub Repos</p></div>
+            <div class="stat-box"><span class="stat-num cyan-text" data-count="11">0</span><span class="stat-plus">+</span><p>CodeChef Contests</p></div>
+            <div class="stat-box"><span class="stat-num cyan-text" data-count="7">0</span><span class="stat-plus">+</span><p>Certifications</p></div>
+        </div>
+
+        <!-- Find me on -->
+        <h3 class="find-title">Find me on</h3>
+        <div class="social-grid">
+            <a href="https://github.com/Akagra12" target="_blank" class="social-card"><div class="social-icon">🐙</div><div><strong>GitHub</strong><p>Akagra12</p></div></a>
+            <a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank" class="social-card"><div class="social-icon">💼</div><div><strong>LinkedIn</strong><p>akagra-gangwar</p></div></a>
+            <a href="https://leetcode.com/u/MrShark01/" target="_blank" class="social-card"><div class="social-icon">💡</div><div><strong>LeetCode</strong><p>MrShark01</p></div></a>
+            <a href="https://www.hackerrank.com/profile/akagargangwar" target="_blank" class="social-card"><div class="social-icon">💚</div><div><strong>HackerRank</strong><p>akagargangwar</p></div></a>
+            <a href="https://www.codechef.com/users/akagar_g" target="_blank" class="social-card"><div class="social-icon">🍳</div><div><strong>CodeChef</strong><p>akagar_g</p></div></a>
+            <a href="mailto:akagraace@gmail.com" class="social-card"><div class="social-icon">✉️</div><div><strong>Email</strong><p>akagraace@gmail.com</p></div></a>
+        </div>
+    </div></section>
+
+    <footer class="footer"><div class="container footer-content"><p>© 2026 <strong>AKAGRA GANGWAR</strong></p><div class="footer-links"><a href="https://github.com/Akagra12" target="_blank">GitHub</a><a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank">LinkedIn</a></div></div></footer>
+    <script src="script.js"></script>
+</body>
+</html>
