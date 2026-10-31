@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# resume-
-you can access 
-https://portfolio-sable-five-eto92wklxf.vercel.app/index.html
-=======
 # Engineering Portfolio — Akagra Gangwar
 
 Modern, recruiter-optimized personal developer portfolio deployed at [akagra.dev](https://akagra.dev).
@@ -25,8 +20,8 @@ Built for technical recruitment targeting **Software Development Engineer (SDE) 
 ```
 ├── index.html          # Hero section, flagship showcase, telemetry stats & background
 ├── projects.html       # Engineering catalog (8 projects), category filters, detail modals & journey
-├── skills.html         # Technical capabilities (Languages, Frontend, Backend, AI/ML, Databases, Tools)
-├── credentials.html    # 7 verified certifications (Coursera & Infosys Springboard)
+├── skills.html         # Technical capabilities (Languages, Frontend, Backend, Core CS, AI/ML, SWE, Tools)
+├── credentials.html    # 10 verified certifications & hackathon achievements
 ├── about.html          # Professional biography, academic background & online profiles
 ├── resume.pdf          # Verified ATS-optimized PDF resume
 ├── style.css           # Global typography, colors, navigation, buttons, and hero layout
@@ -44,7 +39,7 @@ This project is pre-configured for automated zero-configuration deployment via V
 1. Push changes to your GitHub repository:
    ```bash
    git add .
-   git commit -m "feat: complete Phase 4 portfolio polish & verification"
+   git commit -m "feat: add neural networks, ML regression & hackathon credentials"
    git push origin main
    ```
 2. Vercel automatically detects static HTML/CSS/JS and deploys to production with automatic SSL and global edge CDN caching.
@@ -58,4 +53,3 @@ This project is pre-configured for automated zero-configuration deployment via V
 - **GitHub:** [github.com/Akagra12](https://github.com/Akagra12)
 - **LeetCode:** [leetcode.com/u/Akagra1/](https://leetcode.com/u/Akagra1/)
 - **Email:** [akagraace@gmail.com](mailto:akagraace@gmail.com)
->>>>>>> 86fbfca (feat: complete portfolio audit and pre-deployment polish)

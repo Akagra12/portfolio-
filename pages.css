@@ -852,6 +852,12 @@
   color: #fbbf24;
 }
 
+.cred-badge.competition {
+  background: rgba(124, 58, 237, 0.15);
+  border: 1px solid rgba(167, 139, 250, 0.35);
+  color: #c4b5fd;
+}
+
 .cred-id {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.72rem;
@@ -1393,11 +1399,49 @@
 
 @media (max-width: 600px) {
   .globe-section {
-    height: 380px;
+    height: 360px;
+    margin-bottom: 24px;
+  }
+  .float-skill {
+    font-size: 0.68rem;
+    padding: 4px 10px;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .skill-tabs {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .skill-tab {
+    padding: 8px 14px;
+    font-size: 0.78rem;
+  }
+  .skill-catalog-card {
+    padding: 20px 18px;
   }
   .globe-canvas {
-    width: 380px;
-    height: 380px;
+    width: 360px;
+    height: 360px;
+    margin-bottom: 24px;
+  }
+  .float-skill {
+    font-size: 0.68rem;
+    padding: 4px 10px;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .skill-tabs {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+  .skill-tab {
+    padding: 8px 14px;
+    font-size: 0.78rem;
+  }
+  .skill-catalog-card {
+    padding: 20px 18px;
   }
   .stats-row {
     grid-template-columns: 1fr 1fr;
