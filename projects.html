@@ -3,132 +3,891 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - Akagra Gangwar</title>
+    <title>Projects & Technical Showcase — Akagra Gangwar</title>
+    <meta name="description" content="Technical project portfolio of Akagra Gangwar. Featuring ScreenGuard AI, AI Meeting Intelligence, EduRide, and applied computer vision and backend systems.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pages.css">
 </head>
 <body>
     <div class="cursor-glow" id="cursorGlow"></div>
     <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-center">
             <a href="index.html" class="nav-logo-box">akagra<span class="logo-dot">.</span>dev</a>
             <a href="index.html" class="nav-home" aria-label="Home">⌂</a>
             <a href="projects.html" class="nav-link active">PROJECTS</a>
+            <a href="skills.html" class="nav-link">SKILLS</a>
             <a href="credentials.html" class="nav-link">CREDENTIALS</a>
-            <a href="skills.html" class="nav-link">FORGE</a>
-            <a href="about.html" class="nav-link">PERSONA</a>
+            <a href="about.html" class="nav-link">ABOUT</a>
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume-btn">RESUME <span class="nav-resume-arrow">↓</span></a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </nav>
-    <div class="mobile-menu" id="mobileMenu"><a href="index.html" class="mobile-link">HOME</a><a href="projects.html" class="mobile-link">PROJECTS</a><a href="credentials.html" class="mobile-link">CREDENTIALS</a><a href="skills.html" class="mobile-link">FORGE</a><a href="about.html" class="mobile-link">PERSONA</a></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mobile-link">HOME</a>
+        <a href="projects.html" class="mobile-link">PROJECTS</a>
+        <a href="skills.html" class="mobile-link">SKILLS</a>
+        <a href="credentials.html" class="mobile-link">CREDENTIALS</a>
+        <a href="about.html" class="mobile-link">ABOUT</a>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="mobile-link mobile-resume-link">RESUME (PDF) ↓</a>
+    </div>
 
-    <section class="page-hero"><div class="container">
-        <span class="section-tag cyan">PORTFOLIO</span>
-        <h1 class="page-title-big">Selected Works</h1>
-    </div></section>
-
-    <section class="section"><div class="container">
-        <div class="works-grid">
-
-            <div class="work-card" data-tilt>
-                <div class="work-thumb"><div class="work-thumb-inner ai-bg"><span class="thumb-icon">🤖</span><span class="thumb-label">AI Platform</span></div></div>
-                <h3>AI Meeting Intelligence System</h3>
-                <p>Full-stack AI platform for automated meeting transcription, speaker diarization, and business intelligence extraction with Whisper, Gemini & Qwen.</p>
-                <div class="work-toggles">
-                    <button class="toggle-btn active" data-target="scope1">SCOPE</button>
-                    <button class="toggle-btn" data-target="tech1">TECH</button>
-                </div>
-                <div class="toggle-content" id="scope1">AES-256 JWT auth, CI/CD on Render, 15 customizable summary formats, parallel multi-model LLaMA inference</div>
-                <div class="toggle-content hidden" id="tech1">JavaScript, Node.js, React.js, Whisper, LLaMA, SQLite, JWT, AES-256</div>
-                <div class="work-links"><a href="https://github.com/Akagra12" target="_blank">↗ Code</a><a href="https://meetingai-2bqy.onrender.com/" target="_blank">↗ Live</a></div>
-            </div>
-
-            <div class="work-card" data-tilt>
-                <div class="work-thumb"><div class="work-thumb-inner cv-bg"><span class="thumb-icon">👁️</span><span class="thumb-label">Computer Vision</span></div></div>
-                <h3>Face Recognition Attendance</h3>
-                <p>Real-time face recognition–based attendance system with automated marking and optimized local image processing.</p>
-                <div class="work-toggles">
-                    <button class="toggle-btn active" data-target="scope2">SCOPE</button>
-                    <button class="toggle-btn" data-target="tech2">TECH</button>
-                </div>
-                <div class="toggle-content" id="scope2">Automated marking, optimized local image processing, real-time face detection pipeline</div>
-                <div class="toggle-content hidden" id="tech2">Python, OpenCV, Firebase, Deep Learning</div>
-                <div class="work-links"><a href="https://github.com/Akagra12" target="_blank">↗ Code</a></div>
-            </div>
-
-            <div class="work-card" data-tilt>
-                <div class="work-thumb"><div class="work-thumb-inner dl-bg"><span class="thumb-icon">😊</span><span class="thumb-label">Deep Learning</span></div></div>
-                <h3>Multi-Model Emotion Detection</h3>
-                <p>Multi-face emotion detection and classification using deep learning-based multimodal techniques.</p>
-                <div class="work-toggles">
-                    <button class="toggle-btn active" data-target="scope3">SCOPE</button>
-                    <button class="toggle-btn" data-target="tech3">TECH</button>
-                </div>
-                <div class="toggle-content" id="scope3">Multi-face detection, emotion classification, real-time video analysis</div>
-                <div class="toggle-content hidden" id="tech3">Python, Deep Learning, Computer Vision, CNN</div>
-                <div class="work-links"><a href="https://github.com/Akagra12" target="_blank">↗ Code</a></div>
-            </div>
-
-            <div class="work-card" data-tilt>
-                <div class="work-thumb"><div class="work-thumb-inner mern-bg"><span class="thumb-icon">🚗</span><span class="thumb-label">MERN Stack</span></div></div>
-                <h3>EduRide – Ride Sharing</h3>
-                <p>Scalable ride-sharing platform with authentication, ride booking, live status updates, and map-based fare estimation.</p>
-                <div class="work-toggles">
-                    <button class="toggle-btn active" data-target="scope4">SCOPE</button>
-                    <button class="toggle-btn" data-target="tech4">TECH</button>
-                </div>
-                <div class="toggle-content" id="scope4">JWT auth, REST APIs, dynamic ride creation, map-based distance calculation, ride lifecycle management</div>
-                <div class="toggle-content hidden" id="tech4">React, Vite, Node.js, Express, MongoDB, JWT</div>
-                <div class="work-links"><a href="https://github.com/Akagra12/ripedo" target="_blank">↗ Code</a></div>
-            </div>
-
-            <div class="work-card" data-tilt>
-                <div class="work-thumb"><div class="work-thumb-inner cv-bg"><span class="thumb-icon">🌿</span><span class="thumb-label">CNN</span></div></div>
-                <h3>Plant Disease Detection</h3>
-                <p>CNN-based plant disease classification system using the PlantVillage dataset with deep learning.</p>
-                <div class="work-toggles">
-                    <button class="toggle-btn active" data-target="scope5">SCOPE</button>
-                    <button class="toggle-btn" data-target="tech5">TECH</button>
-                </div>
-                <div class="toggle-content" id="scope5">Image classification, PlantVillage dataset, disease identification pipeline</div>
-                <div class="toggle-content hidden" id="tech5">Deep Learning, CNN, Computer Vision, Python</div>
-                <div class="work-links"><a href="https://github.com/Akagra12" target="_blank">↗ Code</a></div>
-            </div>
-
-            <div class="work-card" data-tilt>
-                <div class="work-thumb"><div class="work-thumb-inner ml-bg"><span class="thumb-icon">🏠</span><span class="thumb-label">ML</span></div></div>
-                <h3>House Price Prediction</h3>
-                <p>Regression-based ML model with data preprocessing and feature engineering for accurate price prediction.</p>
-                <div class="work-toggles">
-                    <button class="toggle-btn active" data-target="scope6">SCOPE</button>
-                    <button class="toggle-btn" data-target="tech6">TECH</button>
-                </div>
-                <div class="toggle-content" id="scope6">Data preprocessing, feature engineering, model evaluation, regression analysis</div>
-                <div class="toggle-content hidden" id="tech6">Machine Learning, Regression, Python, Pandas, Scikit-Learn</div>
-                <div class="work-links"><a href="https://github.com/Akagra12" target="_blank">↗ Code</a></div>
-            </div>
-
-            <div class="work-card" data-tilt>
-                <div class="work-thumb"><div class="work-thumb-inner web-bg"><span class="thumb-icon">✈️</span><span class="thumb-label">Web Dev</span></div></div>
-                <h3>Travel & Tourism Management</h3>
-                <p>Web application to manage travel bookings, itineraries, and trip planning workflows.</p>
-                <div class="work-toggles">
-                    <button class="toggle-btn active" data-target="scope7">SCOPE</button>
-                    <button class="toggle-btn" data-target="tech7">TECH</button>
-                </div>
-                <div class="toggle-content" id="scope7">Travel bookings, itinerary management, trip planning, hotel booking interface</div>
-                <div class="toggle-content hidden" id="tech7">HTML, CSS, JavaScript</div>
-                <div class="work-links"><a href="https://github.com/Akagra12/travel" target="_blank">↗ Code</a></div>
-            </div>
-
+    <!-- Page Header -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-tag cyan">TECHNICAL PORTFOLIO</span>
+            <h1 class="page-title-big">Engineering Showcase</h1>
+            <p class="page-sub">Production-grade backend architectures, applied machine learning ensembles, and real-time computer vision systems.</p>
         </div>
-    </div></section>
+    </section>
 
-    <footer class="footer"><div class="container footer-content"><p>© 2026 <strong>AKAGRA GANGWAR</strong></p><div class="footer-links"><a href="https://github.com/Akagra12" target="_blank">GitHub</a><a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank">LinkedIn</a></div></div></footer>
+    <!-- Project Filtering & Showcase Section -->
+    <section class="section" style="padding-top: 10px;">
+        <div class="container">
+
+            <!-- Category Filter Pills -->
+            <div class="project-filters">
+                <button class="filter-pill active" data-filter="all">All Projects <span class="filter-count">8</span></button>
+                <button class="filter-pill" data-filter="fullstack">Full Stack <span class="filter-count">3</span></button>
+                <button class="filter-pill" data-filter="aiml">AI / ML <span class="filter-count">6</span></button>
+                <button class="filter-pill" data-filter="cv">Computer Vision <span class="filter-count">4</span></button>
+                <button class="filter-pill" data-filter="other">Other <span class="filter-count">1</span></button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="works-grid">
+
+                <!-- 1. ScreenGuard AI (Flagship) -->
+                <div class="work-card flagship" data-categories="all cv aiml" data-tilt>
+                    <div class="card-top-badges">
+                        <span class="badge-tag badge-flagship">★ Flagship</span>
+                        <span class="badge-tag badge-cat">CV · ML Ensemble</span>
+                    </div>
+                    <div class="work-thumb">
+                        <div class="work-thumb-inner cv-bg">
+                            <span class="thumb-icon">🛡️</span>
+                            <span class="thumb-label">Computer Vision · Liveness</span>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <h3>ScreenGuard AI: Real-Time Liveness Detection</h3>
+                        <div class="work-kpi-chip">⚡ 94.97% Accuracy · &lt;5ms Inference · 2.84MB Model</div>
+                        <p class="card-brief">On-device anti-spoofing pipeline to distinguish genuine photos from high-resolution screen recaptures without heavy deep learning frameworks.</p>
+                        
+                        <div class="card-ps-grid">
+                            <div class="ps-item">
+                                <strong>Problem:</strong>
+                                <span>Biometric authentication spoofing via re-photographed mobile/laptop displays with high false-positive rates.</span>
+                            </div>
+                            <div class="ps-item">
+                                <strong>Engineering Solution:</strong>
+                                <span>Handcrafted 2D FFT (Moiré grid), LBP textures, and ANOVA selection (`k=80`) feeding a Soft-Voting Ensemble (SVM + GBM + RF).</span>
+                            </div>
+                        </div>
+
+                        <div class="card-tech-pills">
+                            <span>Python</span><span>OpenCV</span><span>2D FFT</span><span>LBP</span><span>Scikit-learn</span><span>SVM</span><span>Pure CPU</span>
+                        </div>
+
+                        <div class="work-actions">
+                            <div class="work-actions-left">
+                                <a href="https://github.com/Akagra12/Screen_guard-ai" target="_blank" rel="noopener noreferrer">↗ Code</a>
+                            </div>
+                            <button class="btn-detail-trigger" data-project="screenguard">
+                                <span>Architecture &amp; Details</span> <span>🔍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. AI Meeting Intelligence (Flagship) -->
+                <div class="work-card flagship" data-categories="all fullstack aiml" data-tilt>
+                    <div class="card-top-badges">
+                        <span class="badge-tag badge-flagship">★ Flagship</span>
+                        <span class="badge-tag badge-cat">AI · Full-Stack</span>
+                    </div>
+                    <div class="work-thumb">
+                        <div class="work-thumb-inner ai-bg">
+                            <span class="thumb-icon">🤖</span>
+                            <span class="thumb-label">Speech-To-Intelligence</span>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <h3>AI-Powered Meeting Intelligence System</h3>
+                        <div class="work-kpi-chip">⚡ 15+ Formats · 80% Effort Saved · 100% Upload Rate</div>
+                        <p class="card-brief">End-to-end meeting analysis pipeline integrating OpenAI Whisper with multi-model LLaMA inference for automated business intelligence.</p>
+
+                        <div class="card-ps-grid">
+                            <div class="ps-item">
+                                <strong>Problem:</strong>
+                                <span>Tedious manual meeting summarization and frequent 25MB payload limits causing audio upload dropouts.</span>
+                            </div>
+                            <div class="ps-item">
+                                <strong>Engineering Solution:</strong>
+                                <span>Automated FFmpeg pre-compression (200MB to &lt;25MB), parallel multi-model Groq LLaMA inference, and AES-256 JWT auth.</span>
+                            </div>
+                        </div>
+
+                        <div class="card-tech-pills">
+                            <span>React.js</span><span>Node.js</span><span>Express.js</span><span>Groq API</span><span>LLaMA</span><span>Whisper</span><span>FFmpeg</span><span>SQLite</span><span>JWT</span>
+                        </div>
+
+                        <div class="work-actions">
+                            <div class="work-actions-left">
+                                <a href="https://meetingai-2bqy.onrender.com/" target="_blank" rel="noopener noreferrer">↗ Live App</a>
+                                <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer">↗ Code</a>
+                            </div>
+                            <button class="btn-detail-trigger" data-project="meetingai">
+                                <span>Architecture &amp; Details</span> <span>🔍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. EduRide -->
+                <div class="work-card" data-categories="all fullstack" data-tilt>
+                    <div class="card-top-badges">
+                        <span class="badge-tag badge-cat">MERN · Real-Time</span>
+                    </div>
+                    <div class="work-thumb">
+                        <div class="work-thumb-inner mern-bg">
+                            <span class="thumb-icon">🚗</span>
+                            <span class="thumb-label">Ride Booking Platform</span>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <h3>EduRide – Full-Stack Ride Booking Platform</h3>
+                        <div class="work-kpi-chip">⚡ JWT Auth · Role-Based RBAC · Socket.IO Sync</div>
+                        <p class="card-brief">Scalable ride-sharing platform with secure multi-role access control, live status tracking, and dynamic fare estimation.</p>
+
+                        <div class="card-ps-grid">
+                            <div class="ps-item">
+                                <strong>Problem:</strong>
+                                <span>Campus transit coordination requiring distinct rider vs. driver privilege isolation and live coordinate sync.</span>
+                            </div>
+                            <div class="ps-item">
+                                <strong>Engineering Solution:</strong>
+                                <span>Architected RESTful endpoints in Node.js/Express with MongoDB schemas, JWT authentication, and Socket.IO event coordination.</span>
+                            </div>
+                        </div>
+
+                        <div class="card-tech-pills">
+                            <span>React.js</span><span>Vite</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span><span>Socket.IO</span>
+                        </div>
+
+                        <div class="work-actions">
+                            <div class="work-actions-left">
+                                <a href="https://github.com/Akagra12/EduRide.git" target="_blank" rel="noopener noreferrer">↗ Code</a>
+                            </div>
+                            <button class="btn-detail-trigger" data-project="eduride">
+                                <span>View Details</span> <span>🔍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Plant Disease Detection -->
+                <div class="work-card" data-categories="all cv aiml" data-tilt>
+                    <div class="card-top-badges">
+                        <span class="badge-tag badge-cat">Deep Learning · CNN</span>
+                    </div>
+                    <div class="work-thumb">
+                        <div class="work-thumb-inner cv-bg">
+                            <span class="thumb-icon">🌿</span>
+                            <span class="thumb-label">Agri-Vision AI</span>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <h3>Plant Disease Detection</h3>
+                        <div class="work-kpi-chip">⚡ 38 Diseases · 14 Crops · 547MB Model Served</div>
+                        <p class="card-brief">Agricultural diagnostic CNN application classifying 38 distinct crop diseases, deployed live on Streamlit Cloud.</p>
+
+                        <div class="card-ps-grid">
+                            <div class="ps-item">
+                                <strong>Problem:</strong>
+                                <span>Deploying large 547MB deep learning models onto serverless cloud platforms with strict repository size constraints.</span>
+                            </div>
+                            <div class="ps-item">
+                                <strong>Engineering Solution:</strong>
+                                <span>Built an automated dynamic fetching pipeline to pull model weights at runtime, allowing continuous live inference on Streamlit.</span>
+                            </div>
+                        </div>
+
+                        <div class="card-tech-pills">
+                            <span>Python</span><span>TensorFlow</span><span>Keras</span><span>CNN</span><span>Streamlit</span><span>OpenCV</span>
+                        </div>
+
+                        <div class="work-actions">
+                            <div class="work-actions-left">
+                                <a href="https://plant-disease-prediction-ewur6va56rhlrjh9q9wahj.streamlit.app/" target="_blank" rel="noopener noreferrer">↗ Live App</a>
+                                <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer">↗ Code</a>
+                            </div>
+                            <button class="btn-detail-trigger" data-project="plantdisease">
+                                <span>View Details</span> <span>🔍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Face Recognition Attendance -->
+                <div class="work-card" data-categories="all cv aiml" data-tilt>
+                    <div class="card-top-badges">
+                        <span class="badge-tag badge-cat">Computer Vision</span>
+                    </div>
+                    <div class="work-thumb">
+                        <div class="work-thumb-inner cv-bg">
+                            <span class="thumb-icon">👁️</span>
+                            <span class="thumb-label">Real-Time Biometrics</span>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <h3>Face Recognition Smart Attendance System</h3>
+                        <div class="work-kpi-chip">⚡ 128-d Face Encodings · Real-Time Firebase Sync</div>
+                        <p class="card-brief">Automated classroom roll-call system matching live webcam video frames against stored face vectors with a custom GUI.</p>
+
+                        <div class="card-ps-grid">
+                            <div class="ps-item">
+                                <strong>Problem:</strong>
+                                <span>Inaccuracy, buddy punching, and manual documentation overhead in institutional attendance tracking.</span>
+                            </div>
+                            <div class="ps-item">
+                                <strong>Engineering Solution:</strong>
+                                <span>Used OpenCV and facial landmark extraction with Firebase Realtime Database for instantaneous sub-second logging.</span>
+                            </div>
+                        </div>
+
+                        <div class="card-tech-pills">
+                            <span>Python</span><span>OpenCV</span><span>face_recognition</span><span>Firebase Realtime DB</span><span>NumPy</span>
+                        </div>
+
+                        <div class="work-actions">
+                            <div class="work-actions-left">
+                                <a href="https://github.com/Akagra12/Face-Recognition-based-Smart-Attendance-System" target="_blank" rel="noopener noreferrer">↗ Code</a>
+                            </div>
+                            <button class="btn-detail-trigger" data-project="facerecog">
+                                <span>View Details</span> <span>🔍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Multi-Model Emotion Detection -->
+                <div class="work-card" data-categories="all cv aiml" data-tilt>
+                    <div class="card-top-badges">
+                        <span class="badge-tag badge-cat">Deep Learning</span>
+                    </div>
+                    <div class="work-thumb">
+                        <div class="work-thumb-inner dl-bg">
+                            <span class="thumb-icon">😊</span>
+                            <span class="thumb-label">Facial Sentiment</span>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <h3>Multi-Model Emotion Detection</h3>
+                        <div class="work-kpi-chip">⚡ Multi-Face Bounding Box · Live Video Analysis</div>
+                        <p class="card-brief">Multimodal deep learning computer vision model localizing multiple faces and classifying nuanced emotional states in real time.</p>
+
+                        <div class="card-ps-grid">
+                            <div class="ps-item">
+                                <strong>Problem:</strong>
+                                <span>Simultaneous real-time sentiment localization across crowded video frames with shifting lighting angles.</span>
+                            </div>
+                            <div class="ps-item">
+                                <strong>Engineering Solution:</strong>
+                                <span>Integrated facial landmark preprocessing with deep CNN classifiers for robust feature extraction across concurrent video bounding boxes.</span>
+                            </div>
+                        </div>
+
+                        <div class="card-tech-pills">
+                            <span>Python</span><span>Deep Learning</span><span>CNN</span><span>OpenCV</span><span>Computer Vision</span>
+                        </div>
+
+                        <div class="work-actions">
+                            <div class="work-actions-left">
+                                <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer">↗ Code</a>
+                            </div>
+                            <button class="btn-detail-trigger" data-project="emotion">
+                                <span>View Details</span> <span>🔍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. House Price Prediction -->
+                <div class="work-card" data-categories="all aiml" data-tilt>
+                    <div class="card-top-badges">
+                        <span class="badge-tag badge-cat">Machine Learning</span>
+                    </div>
+                    <div class="work-thumb">
+                        <div class="work-thumb-inner ml-bg">
+                            <span class="thumb-icon">🏠</span>
+                            <span class="thumb-label">Regression Modeling</span>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <h3>House Price Prediction</h3>
+                        <div class="work-kpi-chip">⚡ End-to-End Regression · Imputation &amp; Scaling</div>
+                        <p class="card-brief">Regression-based machine learning pipeline with rigorous exploratory data analysis, outlier cleaning, and feature engineering.</p>
+
+                        <div class="card-ps-grid">
+                            <div class="ps-item">
+                                <strong>Problem:</strong>
+                                <span>High variance and skewed non-linear pricing indicators in real estate valuation datasets.</span>
+                            </div>
+                            <div class="ps-item">
+                                <strong>Engineering Solution:</strong>
+                                <span>Correlation analysis, categorical one-hot encoding, feature normalization, and cross-validated regression models.</span>
+                            </div>
+                        </div>
+
+                        <div class="card-tech-pills">
+                            <span>Python</span><span>Scikit-Learn</span><span>Pandas</span><span>NumPy</span><span>Regression</span>
+                        </div>
+
+                        <div class="work-actions">
+                            <div class="work-actions-left">
+                                <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer">↗ Code</a>
+                            </div>
+                            <button class="btn-detail-trigger" data-project="houseprice">
+                                <span>View Details</span> <span>🔍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Travel & Tourism Management -->
+                <div class="work-card" data-categories="all fullstack other" data-tilt>
+                    <div class="card-top-badges">
+                        <span class="badge-tag badge-cat">Web Development</span>
+                    </div>
+                    <div class="work-thumb">
+                        <div class="work-thumb-inner web-bg">
+                            <span class="thumb-icon">✈️</span>
+                            <span class="thumb-label">Web Application</span>
+                        </div>
+                    </div>
+                    <div class="work-body">
+                        <h3>Travel &amp; Tourism Management System</h3>
+                        <div class="work-kpi-chip">⚡ Booking Workflows · Responsive Form Validation</div>
+                        <p class="card-brief">Interactive web platform for managing travel reservations, dynamic itinerary planning, and hotel bookings.</p>
+
+                        <div class="card-ps-grid">
+                            <div class="ps-item">
+                                <strong>Problem:</strong>
+                                <span>Fragmented user scheduling and lack of structured itinerary tracking for customized tourist routes.</span>
+                            </div>
+                            <div class="ps-item">
+                                <strong>Engineering Solution:</strong>
+                                <span>Engineered responsive booking interfaces with interactive scheduling components and client-side form validations.</span>
+                            </div>
+                        </div>
+
+                        <div class="card-tech-pills">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive UI</span>
+                        </div>
+
+                        <div class="work-actions">
+                            <div class="work-actions-left">
+                                <a href="https://github.com/Akagra12/travel" target="_blank" rel="noopener noreferrer">↗ Code</a>
+                            </div>
+                            <button class="btn-detail-trigger" data-project="travel">
+                                <span>View Details</span> <span>🔍</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Project Journey Section (Reference Image 1 Inspiration) -->
+    <section class="journey-section" id="journey">
+        <div class="container">
+            <div class="journey-header">
+                <span class="section-tag cyan">CHRONOLOGICAL ROADMAP</span>
+                <h2 class="section-title">Education &amp; Project Journey</h2>
+                <p class="page-sub">A verified progression of academic milestones, applied research, and engineering platforms.</p>
+            </div>
+
+            <div class="journey-timeline">
+
+                <!-- Journey Item 1: Bennett University -->
+                <div class="journey-item left">
+                    <div class="journey-node"></div>
+                    <div class="journey-card">
+                        <div class="journey-top-row">
+                            <span class="journey-badge academic">Academic · In Progress</span>
+                            <span class="journey-date">2023 – 2027</span>
+                        </div>
+                        <h3>B.Tech in Computer Science &amp; Engineering</h3>
+                        <div class="journey-org">Bennett University, Greater Noida, UP</div>
+                        <p>Specialization in Artificial Intelligence &amp; Machine Learning. Maintaining a <strong>CGPA of 8.39 / 10.0</strong>. Strong focus on Data Structures &amp; Algorithms, Object-Oriented Programming (Java), DBMS, Operating Systems, and applied AI systems.</p>
+                        <div class="journey-tags">
+                            <span>Java</span><span>DSA</span><span>OOP</span><span>DBMS</span><span>Operating Systems</span><span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Journey Item 2: ScreenGuard AI -->
+                <div class="journey-item right">
+                    <div class="journey-node"></div>
+                    <div class="journey-card">
+                        <div class="journey-top-row">
+                            <span class="journey-badge">Flagship Research Project</span>
+                            <span class="journey-date">May 2026 – Jun 2026</span>
+                        </div>
+                        <h3>ScreenGuard AI – Display Liveness Detection</h3>
+                        <div class="journey-org">Applied Computer Vision &amp; Feature Engineering</div>
+                        <p>Engineered an on-device anti-spoofing pipeline using 2D FFT Moiré pattern analysis and LBP texture extraction. Reached <strong>94.97% validation accuracy</strong> and <strong>&lt;5ms CPU inference</strong> with a compact 2.84MB model footprint running on pure CPU with zero GPU dependencies.</p>
+                        <div class="journey-tags">
+                            <span>2D FFT</span><span>LBP</span><span>SVM</span><span>Gradient Boosting</span><span>Random Forest</span><span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Journey Item 3: AI Meeting Intelligence System -->
+                <div class="journey-item left">
+                    <div class="journey-node"></div>
+                    <div class="journey-card">
+                        <div class="journey-top-row">
+                            <span class="journey-badge">Flagship Full-Stack Platform</span>
+                            <span class="journey-date">Feb 2026 – Apr 2026</span>
+                        </div>
+                        <h3>AI Meeting Intelligence Platform</h3>
+                        <div class="journey-org">Speech-To-Intelligence Production Pipeline</div>
+                        <p>Architected full-stack pipeline integrating OpenAI Whisper with multi-model LLaMA via Groq API. Automated FFmpeg preprocessing to compress 200MB uploads to under 25MB with 100% success rate. Built 15+ structured summary formats, reducing manual documentation effort by 80%.</p>
+                        <div class="journey-tags">
+                            <span>Node.js</span><span>Express</span><span>React</span><span>Groq LLaMA</span><span>Whisper</span><span>FFmpeg</span><span>JWT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Journey Item 4: Plant Disease Detection -->
+                <div class="journey-item right">
+                    <div class="journey-node"></div>
+                    <div class="journey-card">
+                        <div class="journey-top-row">
+                            <span class="journey-badge">Deep Learning Project</span>
+                            <span class="journey-date">Oct 2025 – Nov 2025</span>
+                        </div>
+                        <h3>Plant Disease Detection Application</h3>
+                        <div class="journey-org">Agricultural Vision Classifier</div>
+                        <p>Trained a Convolutional Neural Network on PlantVillage dataset to classify 38 diseases across 14 crops. Engineered runtime dynamic model fetching to deploy the 547MB CNN model live on Streamlit Community Cloud.</p>
+                        <div class="journey-tags">
+                            <span>TensorFlow</span><span>CNN</span><span>Computer Vision</span><span>Streamlit Cloud</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Journey Item 5: Face Recognition Attendance System -->
+                <div class="journey-item left">
+                    <div class="journey-node"></div>
+                    <div class="journey-card">
+                        <div class="journey-top-row">
+                            <span class="journey-badge">Computer Vision System</span>
+                            <span class="journey-date">Aug 2025 – Oct 2025</span>
+                        </div>
+                        <h3>Face Recognition Smart Attendance</h3>
+                        <div class="journey-org">Real-Time Facial Biometrics</div>
+                        <p>Developed webcam attendance tracker matching live video streams against pre-computed 128-d face encodings. Integrated Firebase Realtime Database for instantaneous attendance record updates and student GUI display.</p>
+                        <div class="journey-tags">
+                            <span>OpenCV</span><span>face_recognition</span><span>Firebase Realtime DB</span><span>NumPy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Journey Item 6: EduRide -->
+                <div class="journey-item right">
+                    <div class="journey-node"></div>
+                    <div class="journey-card">
+                        <div class="journey-top-row">
+                            <span class="journey-badge">Full-Stack MERN System</span>
+                            <span class="journey-date">Jan 2025 – Apr 2025</span>
+                        </div>
+                        <h3>EduRide – Ride Booking Platform</h3>
+                        <div class="journey-org">Full-Stack MERN Web Architecture</div>
+                        <p>Architected RESTful backend services in Node.js and MongoDB with JWT authentication and Role-Based Access Control (RBAC). Integrated Socket.IO for real-time ride tracking and dynamic distance-based fare estimation.</p>
+                        <div class="journey-tags">
+                            <span>React</span><span>Vite</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Socket.IO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Journey Item 7: Senior Secondary (12th Standard) -->
+                <div class="journey-item left">
+                    <div class="journey-node"></div>
+                    <div class="journey-card">
+                        <div class="journey-top-row">
+                            <span class="journey-badge academic">Academic Foundation</span>
+                            <span class="journey-date">2022 – 2023</span>
+                        </div>
+                        <h3>Senior Secondary (12th Standard PCM)</h3>
+                        <div class="journey-org">C.P. Vidya Niketan, Kaimganj, UP</div>
+                        <p>Completed higher secondary education in Science stream (Physics, Chemistry, Mathematics) with <strong>80% marks</strong>, building strong analytical foundations in mathematical problem solving.</p>
+                        <div class="journey-tags">
+                            <span>Mathematics</span><span>Physics</span><span>Computer Science</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Journey Item 8: Secondary School (10th Standard) -->
+                <div class="journey-item right">
+                    <div class="journey-node"></div>
+                    <div class="journey-card">
+                        <div class="journey-top-row">
+                            <span class="journey-badge academic">Academic Foundation</span>
+                            <span class="journey-date">2020 – 2021</span>
+                        </div>
+                        <h3>Secondary School (10th Standard)</h3>
+                        <div class="journey-org">C.P. Vidya Niketan, Kaimganj, UP</div>
+                        <p>Completed high school board examination with <strong>88% marks</strong>.</p>
+                        <div class="journey-tags">
+                            <span>Science</span><span>Mathematics</span><span>English</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Backdrop & Container -->
+    <div class="project-modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="project-modal-dialog">
+            <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">×</button>
+            <div id="modalContent">
+                <!-- Dynamically populated from templates below -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden Detail Templates -->
+    <div style="display: none;">
+
+        <!-- Template 1: ScreenGuard AI -->
+        <template id="tpl-screenguard">
+            <div class="modal-header">
+                <div class="modal-badge-row">
+                    <span class="badge-tag badge-flagship">★ Flagship Project</span>
+                    <span class="badge-tag badge-cat">Computer Vision · ML Ensemble</span>
+                </div>
+                <h2 id="modalTitle">ScreenGuard AI: Real-Time Display Liveness &amp; Recapture Detection</h2>
+                <div class="work-kpi-chip" style="margin-top: 8px;">Verified Accuracy: 94.97% · 5-Fold CV: 94.70% · Model: 2.84MB</div>
+            </div>
+
+            <div class="modal-section">
+                <h4>🎯 Problem Statement</h4>
+                <p>Digital identity and e-KYC platforms face severe spoofing threats where attackers present high-resolution smartphone, tablet, or monitor screens displaying someone else's face or document instead of an authentic live person. Traditional deep learning solutions require heavy GPU runtimes (PyTorch/TensorFlow) with high inference latency, rendering them impractical for on-device and edge deployment.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>🏛️ Architecture &amp; Pipeline Overview</h4>
+                <div class="arch-diagram-box">
+                    <div class="arch-flow">
+                        <div class="arch-node">
+                            <span class="arch-node-title">1. Input Image</span>
+                            <span class="arch-node-sub">512×512 Standardized</span>
+                        </div>
+                        <span class="arch-arrow">➔</span>
+                        <div class="arch-node">
+                            <span class="arch-node-title">2. Feature Extraction</span>
+                            <span class="arch-node-sub">2D FFT Moiré + LBP + Glare</span>
+                        </div>
+                        <span class="arch-arrow">➔</span>
+                        <div class="arch-node">
+                            <span class="arch-node-title">3. ANOVA Selection</span>
+                            <span class="arch-node-sub">SelectKBest (k=80)</span>
+                        </div>
+                        <span class="arch-arrow">➔</span>
+                        <div class="arch-node">
+                            <span class="arch-node-title">4. Soft-Voting Ensemble</span>
+                            <span class="arch-node-sub">SVM (RBF) + GBM + RF</span>
+                        </div>
+                        <span class="arch-arrow">➔</span>
+                        <div class="arch-node">
+                            <span class="arch-node-title">5. Classification</span>
+                            <span class="arch-node-sub">Real vs. Spoof (&lt;5ms)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>⚙️ Technical Implementation Details</h4>
+                <ul>
+                    <li><strong>2D Fourier Transform (FFT) Frequency Analysis:</strong> Evaluates radial band statistics and horizontal/vertical energy projections to detect periodic Moiré patterns caused by camera sensor and digital display grid interference.</li>
+                    <li><strong>Local Binary Patterns (LBP):</strong> Extracts micro-texture histograms unique to illuminated liquid-crystal and OLED pixel lattices.</li>
+                    <li><strong>Color &amp; Edge Statistics:</strong> Analyzes HSV chromaticity distributions (gamut limitations) and Laplacian blur variance to identify screen reflections and re-photographing artifacts.</li>
+                    <li><strong>Synthetic Data Augmentation:</strong> Expanded training dataset from 343 original images to 991 samples by overlaying synthetic sinusoidal Moiré patterns, color temperature shifts, and Gaussian refocus blur.</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h4>⏱️ Latency &amp; Execution Breakdown</h4>
+                <ul>
+                    <li><strong>Core Model Inference:</strong> &lt;5 ms on standard single-threaded laptop CPU (encompassing feature extraction, ANOVA SelectKBest (k=80), and Soft-Voting ensemble prediction).</li>
+                    <li><strong>Image Decoding Overhead:</strong> In tests on raw uncompressed 8–13 MP mobile camera captures, OpenCV JPEG decoding accounted for ~95% (~330 ms) of total processing time. Standardizing input resolution to 512×512 brings total end-to-end execution to &lt;15 ms.</li>
+                    <li><strong>Zero GPU Dependency:</strong> Runs completely offline on local CPU hardware ($0 infrastructure cost) with zero heavy framework runtime dependencies such as PyTorch or TensorFlow.</li>
+                </ul>
+            </div>
+
+            <div class="modal-section">
+                <h4>📊 Verified Benchmarks &amp; Efficiency</h4>
+                <div class="modal-benchmarks-grid">
+                    <div class="benchmark-card">
+                        <strong>94.97%</strong>
+                        <span>Validation Accuracy</span>
+                    </div>
+                    <div class="benchmark-card">
+                        <strong>94.70%</strong>
+                        <span>5-Fold CV (±1.29%)</span>
+                    </div>
+                    <div class="benchmark-card">
+                        <strong>96% / 97%</strong>
+                        <span>Screen Precision / Recall</span>
+                    </div>
+                    <div class="benchmark-card">
+                        <strong>&lt;5 ms</strong>
+                        <span>CPU Model Inference</span>
+                    </div>
+                    <div class="benchmark-card">
+                        <strong>2.84 MB</strong>
+                        <span>Trained Model Size</span>
+                    </div>
+                    <div class="benchmark-card">
+                        <strong>Pure CPU</strong>
+                        <span>Zero GPU Dependency</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-actions">
+                <a href="https://github.com/Akagra12/Screen_guard-ai" target="_blank" rel="noopener noreferrer" class="modal-btn-code">↗ View GitHub Repository</a>
+            </div>
+        </template>
+
+        <!-- Template 2: AI Meeting Intelligence System -->
+        <template id="tpl-meetingai">
+            <div class="modal-header">
+                <div class="modal-badge-row">
+                    <span class="badge-tag badge-flagship">★ Flagship Platform</span>
+                    <span class="badge-tag badge-cat">AI · Full-Stack Platform</span>
+                </div>
+                <h2 id="modalTitle">AI-Powered Meeting Intelligence System</h2>
+                <div class="work-kpi-chip" style="margin-top: 8px;">15+ Customizable Output Formats · 80% Documentation Time Saved</div>
+            </div>
+
+            <div class="modal-section">
+                <h4>🎯 Problem Statement</h4>
+                <p>Knowledge workers lose hours every week manually capturing notes, action items, and executive summaries from long audio recordings. Furthermore, standard speech-to-text APIs enforce strict 25MB file upload limits, causing large meeting files (100MB–200MB) to fail upload.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>🏛️ Architecture &amp; System Flow</h4>
+                <div class="arch-diagram-box">
+                    <div class="arch-flow">
+                        <div class="arch-node">
+                            <span class="arch-node-title">1. Audio Upload</span>
+                            <span class="arch-node-sub">Up to 200MB MP3/WAV</span>
+                        </div>
+                        <span class="arch-arrow">➔</span>
+                        <div class="arch-node">
+                            <span class="arch-node-title">2. FFmpeg Pipeline</span>
+                            <span class="arch-node-sub">Dynamic Compression &lt;25MB</span>
+                        </div>
+                        <span class="arch-arrow">➔</span>
+                        <div class="arch-node">
+                            <span class="arch-node-title">3. OpenAI Whisper</span>
+                            <span class="arch-node-sub">High-Accuracy Transcription</span>
+                        </div>
+                        <span class="arch-arrow">➔</span>
+                        <div class="arch-node">
+                            <span class="arch-node-title">4. Groq LLaMA Inference</span>
+                            <span class="arch-node-sub">Multi-Model Extraction</span>
+                        </div>
+                        <span class="arch-arrow">➔</span>
+                        <div class="arch-node">
+                            <span class="arch-node-title">5. REST API &amp; React UI</span>
+                            <span class="arch-node-sub">AES-256 JWT Secured</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>⚙️ Technical Implementation &amp; Key Challenges</h4>
+                <ul>
+                    <li><strong>Automated Audio Compression with FFmpeg:</strong> Built a backend workflow that dynamically analyzes audio bitrate and applies loss-minimized compression to reduce uploads from up to 200MB to under 25MB, achieving a 100% upload success rate.</li>
+                    <li><strong>Parallel Multi-Model LLaMA Processing:</strong> Integrated Groq API for rapid inference across multiple LLaMA model variants, delivering 15+ specialized summary formats (Executive Briefs, Action Item Trackers, Key Takeaways).</li>
+                    <li><strong>Enterprise-Grade Security &amp; Data Architecture:</strong> Implemented JWT authentication and AES-256 encryption for user API keys, maintaining separate database configurations (SQLite for lightweight local development and PostgreSQL / cloud database for production deployment on Render).</li>
+                </ul>
+            </div>
+
+            <div class="modal-actions">
+                <a href="https://meetingai-2bqy.onrender.com/" target="_blank" rel="noopener noreferrer" class="modal-btn-live">↗ Open Live Application</a>
+                <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer" class="modal-btn-code">↗ View GitHub Repository</a>
+            </div>
+        </template>
+
+        <!-- Template 3: EduRide -->
+        <template id="tpl-eduride">
+            <div class="modal-header">
+                <div class="modal-badge-row">
+                    <span class="badge-tag badge-cat">MERN Stack · Real-Time</span>
+                </div>
+                <h2 id="modalTitle">EduRide – Full-Stack MERN Ride Booking Platform</h2>
+                <div class="work-kpi-chip" style="margin-top: 8px;">Role-Based Access Control (RBAC) · Real-Time WebSockets</div>
+            </div>
+
+            <div class="modal-section">
+                <h4>🎯 Problem Statement</h4>
+                <p>Campus and local commuters lack a safe, coordinated carpooling and ride-sharing platform that enforces strict privilege boundaries between student drivers and passengers while tracking ride status dynamically.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>🏛️ Architecture Overview</h4>
+                <div class="arch-diagram-box">
+                    <div class="arch-flow">
+                        <div class="arch-node">
+                            <span class="arch-node-title">React + Vite UI</span>
+                            <span class="arch-node-sub">Rider &amp; Driver Views</span>
+                        </div>
+                        <span class="arch-arrow">➔</span>
+                        <div class="arch-node">
+                            <span class="arch-node-title">Express.js REST Layer</span>
+                            <span class="arch-node-sub">JWT Auth &amp; Strict RBAC</span>
+                        </div>
+                        <span class="arch-arrow">➔</span>
+                        <div class="arch-node">
+                            <span class="arch-node-title">Socket.IO Gateway</span>
+                            <span class="arch-node-sub">Live Location &amp; Status</span>
+                        </div>
+                        <span class="arch-arrow">➔</span>
+                        <div class="arch-node">
+                            <span class="arch-node-title">MongoDB Store</span>
+                            <span class="arch-node-sub">Rides, Users &amp; Pricing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-section">
+                <h4>⚙️ Technical Highlights</h4>
+                <ul>
+                    <li>Role-Based Access Control (RBAC) guaranteeing riders and drivers access distinct API endpoints.</li>
+                    <li>Socket.IO event handling synchronizing real-time ride acceptance and status changes.</li>
+                    <li>Integrated map services for dynamic distance calculation and fare estimation.</li>
+                </ul>
+            </div>
+
+            <div class="modal-actions">
+                <a href="https://github.com/Akagra12/EduRide.git" target="_blank" rel="noopener noreferrer" class="modal-btn-code">↗ View GitHub Repository</a>
+            </div>
+        </template>
+
+        <!-- Template 4: Plant Disease -->
+        <template id="tpl-plantdisease">
+            <div class="modal-header">
+                <div class="modal-badge-row">
+                    <span class="badge-tag badge-cat">Deep Learning · Computer Vision</span>
+                </div>
+                <h2 id="modalTitle">Plant Disease Detection</h2>
+                <div class="work-kpi-chip" style="margin-top: 8px;">38 Diseases · 14 Crops · Deployed on Streamlit Cloud</div>
+            </div>
+
+            <div class="modal-section">
+                <h4>🎯 Problem Statement &amp; Solution</h4>
+                <p>Agricultural yields suffer drastically from delayed crop pathology diagnosis. This application provides automated leaf diagnosis across 38 distinct crop diseases using a Convolutional Neural Network (CNN) trained with TensorFlow on the PlantVillage dataset.</p>
+            </div>
+
+            <div class="modal-section">
+                <h4>⚙️ Key Deployment Innovation</h4>
+                <p>Streamlit Community Cloud has strict storage constraints that prevent uploading large model binaries directly into Git. I engineered an automated runtime model fetching pipeline that dynamically retrieves the 547MB CNN model weights into memory upon initialization, ensuring zero deployment downtime.</p>
+            </div>
+
+            <div class="modal-actions">
+                <a href="https://plant-disease-prediction-ewur6va56rhlrjh9q9wahj.streamlit.app/" target="_blank" rel="noopener noreferrer" class="modal-btn-live">↗ Open Live Application</a>
+                <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer" class="modal-btn-code">↗ View GitHub Repository</a>
+            </div>
+        </template>
+
+        <!-- Generic Template for other projects -->
+        <template id="tpl-facerecog">
+            <div class="modal-header">
+                <div class="modal-badge-row"><span class="badge-tag badge-cat">Computer Vision</span></div>
+                <h2 id="modalTitle">Face Recognition Smart Attendance System</h2>
+            </div>
+            <div class="modal-section">
+                <h4>Technical Overview</h4>
+                <p>Automated attendance system leveraging OpenCV to detect and match live webcam video feeds against pre-stored 128-dimensional face encodings. Integrated Firebase Realtime Database for instantaneous sub-second logging and live record display via a custom GUI.</p>
+            </div>
+            <div class="modal-actions">
+                <a href="https://github.com/Akagra12/Face-Recognition-based-Smart-Attendance-System" target="_blank" rel="noopener noreferrer" class="modal-btn-code">↗ View GitHub Repository</a>
+            </div>
+        </template>
+
+        <template id="tpl-emotion">
+            <div class="modal-header">
+                <div class="modal-badge-row"><span class="badge-tag badge-cat">Deep Learning</span></div>
+                <h2 id="modalTitle">Multi-Model Emotion Detection</h2>
+            </div>
+            <div class="modal-section">
+                <h4>Technical Overview</h4>
+                <p>Multimodal computer vision pipeline that localizes multiple faces and classifies nuanced emotional sentiment states in real time using deep convolutional neural networks and facial landmarks.</p>
+            </div>
+            <div class="modal-actions">
+                <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer" class="modal-btn-code">↗ View GitHub Repository</a>
+            </div>
+        </template>
+
+        <template id="tpl-houseprice">
+            <div class="modal-header">
+                <div class="modal-badge-row"><span class="badge-tag badge-cat">Machine Learning</span></div>
+                <h2 id="modalTitle">House Price Prediction</h2>
+            </div>
+            <div class="modal-section">
+                <h4>Technical Overview</h4>
+                <p>End-to-end regression pipeline including correlation analysis, missing value imputation, one-hot encoding, and feature scaling to forecast real estate valuations with minimized RMSE and high R² score.</p>
+            </div>
+            <div class="modal-actions">
+                <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer" class="modal-btn-code">↗ View GitHub Repository</a>
+            </div>
+        </template>
+
+        <template id="tpl-travel">
+            <div class="modal-header">
+                <div class="modal-badge-row"><span class="badge-tag badge-cat">Web Development</span></div>
+                <h2 id="modalTitle">Travel &amp; Tourism Management System</h2>
+            </div>
+            <div class="modal-section">
+                <h4>Technical Overview</h4>
+                <p>Interactive web application to manage travel bookings, custom trip itineraries, and hotel reservations with a responsive user interface and client-side form validations.</p>
+            </div>
+            <div class="modal-actions">
+                <a href="https://github.com/Akagra12/travel" target="_blank" rel="noopener noreferrer" class="modal-btn-code">↗ View GitHub Repository</a>
+            </div>
+        </template>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 <strong>AKAGRA GANGWAR</strong></p>
+            <div class="footer-links">
+                <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://leetcode.com/u/Akagra1/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+                <a href="mailto:akagraace@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>

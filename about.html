@@ -3,83 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Persona - Akagra Gangwar</title>
+    <title>About — Akagra Gangwar | Software Engineer &amp; AI Developer</title>
+    <meta name="description" content="About Akagra Gangwar: Computer Science Engineering (AI &amp; ML) undergraduate at Bennett University (CGPA 8.39/10). Specializing in backend development, scalable REST APIs, and applied machine learning.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pages.css">
 </head>
 <body>
     <div class="cursor-glow" id="cursorGlow"></div>
     <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-center">
             <a href="index.html" class="nav-logo-box">akagra<span class="logo-dot">.</span>dev</a>
             <a href="index.html" class="nav-home" aria-label="Home">⌂</a>
             <a href="projects.html" class="nav-link">PROJECTS</a>
+            <a href="skills.html" class="nav-link">SKILLS</a>
             <a href="credentials.html" class="nav-link">CREDENTIALS</a>
-            <a href="skills.html" class="nav-link">FORGE</a>
-            <a href="about.html" class="nav-link active">PERSONA</a>
+            <a href="about.html" class="nav-link active">ABOUT</a>
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume-btn">RESUME <span class="nav-resume-arrow">↓</span></a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </nav>
-    <div class="mobile-menu" id="mobileMenu"><a href="index.html" class="mobile-link">HOME</a><a href="projects.html" class="mobile-link">PROJECTS</a><a href="credentials.html" class="mobile-link">CREDENTIALS</a><a href="skills.html" class="mobile-link">FORGE</a><a href="about.html" class="mobile-link">PERSONA</a></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mobile-link">HOME</a>
+        <a href="projects.html" class="mobile-link">PROJECTS</a>
+        <a href="skills.html" class="mobile-link">SKILLS</a>
+        <a href="credentials.html" class="mobile-link">CREDENTIALS</a>
+        <a href="about.html" class="mobile-link">ABOUT</a>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="mobile-link mobile-resume-link">RESUME (PDF) ↓</a>
+    </div>
 
-    <section class="page-hero"><div class="container">
-        <span class="section-tag cyan">WHO I AM</span>
-        <h1 class="page-title-big">Persona</h1>
-    </div></section>
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-tag cyan">ENGINEERING PROFILE</span>
+            <h1 class="page-title-big">About Me</h1>
+            <p class="page-sub">Software engineer and machine learning practitioner focused on resilient backend architectures and applied computer vision.</p>
+        </div>
+    </section>
 
-    <section class="section"><div class="container">
-        <div class="persona-grid">
-            <div class="persona-left">
-                <h2 class="persona-hi">Hi, I'm Akagra</h2>
-                <p>B.Tech CSE (AI) student at <strong class="cyan-text">Bennett University</strong> — CGPA <strong class="cyan-text">8.39 / 10</strong>, graduating 2027. I build at the intersection of full-stack engineering and applied ML.</p>
-                <p>My current focus: AI-powered applications (Whisper + LLMs), real-time computer vision systems, and scalable MERN stack platforms. I believe in clean architecture, meaningful products, and building systems that solve real-world problems.</p>
-                <div class="persona-badges">
-                    <span class="p-badge">Greater Noida, India</span>
-                    <span class="p-badge">Bennett University · 2027</span>
+    <section class="section" style="padding-top: 10px;">
+        <div class="container">
+
+            <!-- Profile & Background Grid -->
+            <div class="persona-grid">
+                <div class="persona-left">
+                    <span class="about-slash">/ BACKGROUND &amp; PHILOSOPHY</span>
+                    <h2 class="persona-hi">Engineering at the intersection of backend systems and practical AI.</h2>
+                    <p>I am a Computer Science &amp; Engineering undergraduate specializing in Artificial Intelligence and Machine Learning at <strong class="cyan-text">Bennett University</strong>, maintaining a <strong>CGPA of 8.39 / 10.0</strong>.</p>
+                    <p>My core technical work centers on designing robust server-side architectures, clean RESTful APIs, and applied machine learning models that solve practical engineering challenges. Rather than treating AI as a black box, I emphasize computational efficiency—such as building lightweight, CPU-driven computer vision pipelines (<a href="projects.html" class="inline-link">ScreenGuard AI</a>) and resilient speech-to-intelligence platforms (<a href="projects.html" class="inline-link">AI Meeting Intelligence</a>).</p>
+                    <p>I actively practice algorithmic problem solving in Java, with an in-depth understanding of Data Structures &amp; Algorithms, Object-Oriented Design, and Database Management Systems. I am actively seeking <strong>Software Development Engineer (SDE) Intern</strong>, <strong>Backend Developer Intern</strong>, and <strong>Graduate Engineer Trainee</strong> opportunities where I can contribute to mission-critical distributed systems.</p>
+                    
+                    <div class="persona-badges">
+                        <span class="p-badge">📍 Greater Noida, UP, India</span>
+                        <span class="p-badge">🎓 Bennett University · Class of 2027</span>
+                        <span class="p-badge">⚡ Seeking SDE / Backend Internships</span>
+                    </div>
                 </div>
-            </div>
-            <div class="persona-right">
-                <h3>Education</h3>
-                <div class="edu-card">
-                    <div class="edu-logo">BU</div>
-                    <div class="edu-info">
-                        <h4>Bennett University</h4>
-                        <p class="cyan-text">B.Tech in Computer Science & Engineering (AI)</p>
-                        <p class="edu-year">2023 – 2027</p>
-                        <div class="edu-stat">
-                            <span class="edu-cgpa">CGPA <strong class="cyan-text">8.39</strong> /10</span>
-                            <span class="edu-yr-badge">3rd Year</span>
+
+                <div class="persona-right">
+                    <span class="about-slash">/ ACADEMIC BACKGROUND</span>
+                    <div class="edu-card-container">
+                        <!-- Bennett University -->
+                        <div class="edu-card">
+                            <div class="edu-logo">BU</div>
+                            <div class="edu-info">
+                                <h4>Bennett University</h4>
+                                <p class="cyan-text">B.Tech in Computer Science &amp; Engineering (AI &amp; ML)</p>
+                                <p class="edu-year">2023 – 2027 · Greater Noida, Uttar Pradesh</p>
+                                <div class="edu-stat">
+                                    <span class="edu-cgpa">CGPA <strong class="cyan-text">8.39</strong> / 10.0</span>
+                                    <span class="edu-yr-badge">In Progress</span>
+                                </div>
+                                <div class="edu-coursework">
+                                    <span>DSA (Java)</span><span>DBMS</span><span>Operating Systems</span><span>OOP</span><span>Computer Networks</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- C.P. Vidya Niketan -->
+                        <div class="edu-card" style="margin-top: 16px;">
+                            <div class="edu-logo cp">CP</div>
+                            <div class="edu-info">
+                                <h4>C.P. Vidya Niketan</h4>
+                                <p class="cyan-text">Higher Secondary (12th PCM) &amp; Secondary (10th)</p>
+                                <p class="edu-year">Kaimganj, Uttar Pradesh</p>
+                                <div class="edu-stat">
+                                    <span class="edu-cgpa">12th: <strong class="cyan-text">80%</strong> &nbsp;|&nbsp; 10th: <strong class="cyan-text">88%</strong></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Stats -->
-        <div class="stats-row">
-            <div class="stat-box"><span class="stat-num cyan-text" data-count="7">0</span><span class="stat-plus">+</span><p>Projects Built</p></div>
-            <div class="stat-box"><span class="stat-num cyan-text" data-count="13">0</span><span class="stat-plus">+</span><p>GitHub Repos</p></div>
-            <div class="stat-box"><span class="stat-num cyan-text" data-count="11">0</span><span class="stat-plus">+</span><p>CodeChef Contests</p></div>
-            <div class="stat-box"><span class="stat-num cyan-text" data-count="7">0</span><span class="stat-plus">+</span><p>Certifications</p></div>
-        </div>
+            <!-- Verified Key Metrics -->
+            <div class="stats-row">
+                <div class="stat-box">
+                    <span class="stat-num cyan-text" data-count="8">0</span><span class="stat-plus">+</span>
+                    <p>ENGINEERING PROJECTS</p>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num cyan-text" data-count="7">0</span>
+                    <p>VERIFIED CERTIFICATES</p>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num cyan-text" data-count="14">0</span><span class="stat-plus">+</span>
+                    <p>GITHUB REPOSITORIES</p>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-num cyan-text" data-count="8">0</span><span class="stat-plus">.39</span>
+                    <p>CUMULATIVE CGPA</p>
+                </div>
+            </div>
 
-        <!-- Find me on -->
-        <h3 class="find-title">Find me on</h3>
-        <div class="social-grid">
-            <a href="https://github.com/Akagra12" target="_blank" class="social-card"><div class="social-icon">🐙</div><div><strong>GitHub</strong><p>Akagra12</p></div></a>
-            <a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank" class="social-card"><div class="social-icon">💼</div><div><strong>LinkedIn</strong><p>akagra-gangwar</p></div></a>
-            <a href="https://leetcode.com/u/MrShark01/" target="_blank" class="social-card"><div class="social-icon">💡</div><div><strong>LeetCode</strong><p>MrShark01</p></div></a>
-            <a href="https://www.hackerrank.com/profile/akagargangwar" target="_blank" class="social-card"><div class="social-icon">💚</div><div><strong>HackerRank</strong><p>akagargangwar</p></div></a>
-            <a href="https://www.codechef.com/users/akagar_g" target="_blank" class="social-card"><div class="social-icon">🍳</div><div><strong>CodeChef</strong><p>akagar_g</p></div></a>
-            <a href="mailto:akagraace@gmail.com" class="social-card"><div class="social-icon">✉️</div><div><strong>Email</strong><p>akagraace@gmail.com</p></div></a>
-        </div>
-    </div></section>
+            <!-- Connect & Social Profiles -->
+            <div class="connect-section">
+                <span class="about-slash">/ ONLINE PROFILES</span>
+                <h3 class="find-title">Connect &amp; Verify</h3>
+                <div class="social-grid">
+                    <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer" class="social-card">
+                        <div class="social-icon">🐙</div>
+                        <div>
+                            <strong>GitHub</strong>
+                            <p>@Akagra12 · Repositories &amp; Code</p>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank" rel="noopener noreferrer" class="social-card">
+                        <div class="social-icon">💼</div>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <p>Akagra Gangwar · Professional Network</p>
+                        </div>
+                    </a>
+                    <a href="https://leetcode.com/u/Akagra1/" target="_blank" rel="noopener noreferrer" class="social-card">
+                        <div class="social-icon">💡</div>
+                        <div>
+                            <strong>LeetCode</strong>
+                            <p>@Akagra1 · Algorithmic Practice</p>
+                        </div>
+                    </a>
+                    <a href="https://www.hackerrank.com/profile/akagargangwar" target="_blank" rel="noopener noreferrer" class="social-card">
+                        <div class="social-icon">💚</div>
+                        <div>
+                            <strong>HackerRank</strong>
+                            <p>@akagargangwar · Coding Assessments</p>
+                        </div>
+                    </a>
+                    <a href="https://www.codechef.com/users/akagar_g" target="_blank" rel="noopener noreferrer" class="social-card">
+                        <div class="social-icon">🍳</div>
+                        <div>
+                            <strong>CodeChef</strong>
+                            <p>@akagar_g · Competitive Coding</p>
+                        </div>
+                    </a>
+                    <a href="mailto:akagraace@gmail.com" class="social-card">
+                        <div class="social-icon">✉️</div>
+                        <div>
+                            <strong>Email Directly</strong>
+                            <p>akagraace@gmail.com</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
 
-    <footer class="footer"><div class="container footer-content"><p>© 2026 <strong>AKAGRA GANGWAR</strong></p><div class="footer-links"><a href="https://github.com/Akagra12" target="_blank">GitHub</a><a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank">LinkedIn</a></div></div></footer>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 <strong>AKAGRA GANGWAR</strong></p>
+            <div class="footer-links">
+                <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://leetcode.com/u/Akagra1/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+                <a href="mailto:akagraace@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>

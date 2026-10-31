@@ -3,90 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akagra Gangwar - Developer</title>
-    <meta name="description" content="Akagra Gangwar — Full-Stack & AI/ML Developer. Building intelligent systems at the intersection of web development and machine learning.">
+    <title>Akagra Gangwar — Software Developer | Backend & Applied AI</title>
+    <meta name="description" content="Akagra Gangwar — Computer Science (AI & ML) student at Bennett University. Building scalable backend architectures, RESTful systems, and applied AI pipelines.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="cursor-glow" id="cursorGlow"></div>
     <canvas id="particleCanvas"></canvas>
 
-    <!-- Nav -->
+    <!-- Navigation (Recruiter Friendly) -->
     <nav class="navbar" id="navbar">
         <div class="nav-center">
             <a href="index.html" class="nav-logo-box">akagra<span class="logo-dot">.</span>dev</a>
-            <a href="index.html" class="nav-home" aria-label="Home">⌂</a>
+            <a href="index.html" class="nav-home active" aria-label="Home">⌂</a>
             <a href="projects.html" class="nav-link">PROJECTS</a>
+            <a href="skills.html" class="nav-link">SKILLS</a>
             <a href="credentials.html" class="nav-link">CREDENTIALS</a>
-            <a href="skills.html" class="nav-link">FORGE</a>
-            <a href="about.html" class="nav-link">PERSONA</a>
+            <a href="about.html" class="nav-link">ABOUT</a>
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume-btn">RESUME <span class="nav-resume-arrow">↓</span></a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </nav>
     <div class="mobile-menu" id="mobileMenu">
         <a href="index.html" class="mobile-link">HOME</a>
         <a href="projects.html" class="mobile-link">PROJECTS</a>
+        <a href="skills.html" class="mobile-link">SKILLS</a>
         <a href="credentials.html" class="mobile-link">CREDENTIALS</a>
-        <a href="skills.html" class="mobile-link">FORGE</a>
-        <a href="about.html" class="mobile-link">PERSONA</a>
+        <a href="about.html" class="mobile-link">ABOUT</a>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="mobile-link mobile-resume-link">RESUME (PDF) ↓</a>
     </div>
 
-    <!-- Hero -->
+    <!-- Hero Section (Redesigned with Reference Image 2 Inspiration) -->
     <section class="hero" id="hero">
-        <div class="hero-photo-wrap">
-            <img src="profile.jpg" alt="Akagra Gangwar" class="hero-photo">
-        </div>
-        <div class="hero-content">
-            <p class="hero-greeting" data-animate="fade-up" data-delay="0">Hello! I'm</p>
-            <h1 class="hero-name" data-animate="fade-up" data-delay="1">Akagra Gangwar</h1>
-            <p class="hero-title" data-animate="fade-up" data-delay="2">A passionate <span class="text-gradient">Full-Stack & AI/ML Developer</span></p>
-            <p class="hero-desc" data-animate="fade-up" data-delay="3">Building intelligent systems at the intersection of full-stack development and machine learning.</p>
-            <div class="hero-cta" data-animate="fade-up" data-delay="4">
-                <a href="projects.html" class="btn btn-primary">View Projects</a>
-                <a href="about.html" class="btn btn-outline">About Me</a>
+        <div class="hero-container">
+            <!-- Left Column: Content & Actions -->
+            <div class="hero-left">
+                <div class="hero-badge" data-animate="fade-up" data-delay="0">
+                    <span class="badge-dot"></span>
+                    <span class="badge-text">✨ Open to SDE & Backend Internships</span>
+                </div>
+
+                <h1 class="hero-main-title" data-animate="fade-up" data-delay="1">
+                    Software<br><span class="hero-gradient-text">Developer</span>
+                </h1>
+
+                <div class="hero-type-wrap" data-animate="fade-up" data-delay="2">
+                    <span class="hero-type-text" id="heroTypewriter">Full Stack & AI/ML Developer</span><span class="type-cursor">|</span>
+                </div>
+
+                <p class="hero-pitch" data-animate="fade-up" data-delay="3">
+                    B.Tech CSE (AI &amp; ML) undergraduate at Bennett University (CGPA: 8.39/10). Specializing in backend systems architecture, RESTful microservices, and high-efficiency on-device AI pipelines.
+                </p>
+
+                <div class="hero-tech-pills" data-animate="fade-up" data-delay="4">
+                    <span class="tech-pill">Java</span>
+                    <span class="tech-pill">Python</span>
+                    <span class="tech-pill">Node.js</span>
+                    <span class="tech-pill">Express</span>
+                    <span class="tech-pill">React</span>
+                    <span class="tech-pill">MongoDB</span>
+                    <span class="tech-pill">OpenCV</span>
+                </div>
+
+                <div class="hero-actions" data-animate="fade-up" data-delay="5">
+                    <a href="projects.html" class="hero-btn-primary">
+                        <span>Projects</span>
+                        <span class="btn-arrow">↗</span>
+                    </a>
+                    <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="hero-btn-secondary">
+                        <span>Resume</span>
+                        <span class="btn-arrow">↓</span>
+                    </a>
+                    <a href="#contact" class="hero-btn-glass">
+                        <span>Contact</span>
+                        <span>✉</span>
+                    </a>
+                </div>
+
+                <div class="hero-social-row" data-animate="fade-up" data-delay="6">
+                    <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer" class="social-glass-btn" aria-label="GitHub">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank" rel="noopener noreferrer" class="social-glass-btn" aria-label="LinkedIn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://leetcode.com/u/Akagra1/" target="_blank" rel="noopener noreferrer" class="social-glass-btn" aria-label="LeetCode">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </a>
+                    <a href="mailto:akagraace@gmail.com" class="social-glass-btn" aria-label="Email">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Interactive Developer Telemetry Card -->
+            <div class="hero-right" data-animate="fade-up" data-delay="3">
+                <div class="hero-console-card">
+                    <div class="console-header">
+                        <div class="console-dots">
+                            <span class="console-dot dot-red"></span>
+                            <span class="console-dot dot-yellow"></span>
+                            <span class="console-dot dot-green"></span>
+                        </div>
+                        <span class="console-title">akagra@node-server: ~</span>
+                    </div>
+
+                    <div class="console-avatar-row">
+                        <img src="profile.jpg" alt="Akagra Gangwar" class="console-avatar">
+                        <div class="console-profile-info">
+                            <h4>Akagra Gangwar</h4>
+                            <p>B.Tech CSE (AI &amp; ML) · Bennett University</p>
+                        </div>
+                    </div>
+
+                    <div class="console-metrics-grid">
+                        <div class="console-metric-item">
+                            <span class="metric-label">Academic CGPA</span>
+                            <span class="metric-value">8.39 / 10.0</span>
+                        </div>
+                        <div class="console-metric-item">
+                            <span class="metric-label">Graduation</span>
+                            <span class="metric-value">Class of 2027</span>
+                        </div>
+                        <div class="console-metric-item">
+                            <span class="metric-label">ScreenGuard CV</span>
+                            <span class="metric-value">94.97% Acc · &lt;5ms</span>
+                        </div>
+                        <div class="console-metric-item">
+                            <span class="metric-label">Target Roles</span>
+                            <span class="metric-value">SDE / Backend</span>
+                        </div>
+                    </div>
+
+                    <div class="console-flagship-box">
+                        <span class="flagship-highlight">$ system.flagships:</span><br>
+                        • <strong>ScreenGuard AI:</strong> On-device spoof detection (2D FFT, LBP, SVM+GBM+RF, 2.84MB)<br>
+                        • <strong>MeetingAI:</strong> Whisper + Groq LLaMA speech pipeline (15+ formats, AES-256 JWT)
+                    </div>
+                </div>
             </div>
         </div>
+
         <div class="scroll-indicator"><div class="scroll-line"></div><span>SCROLL</span></div>
     </section>
 
-    <!-- Featured Projects -->
+    <!-- Featured Projects (Highlighted Flagships) -->
     <section class="section" id="featured">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Featured Work</span>
-                <h2 class="section-title">Projects</h2>
+                <span class="section-tag">Flagship Engineering</span>
+                <h2 class="section-title">Featured Projects</h2>
             </div>
             <div class="featured-grid">
+                <!-- Flagship 1: ScreenGuard AI -->
                 <div class="card-3d" data-tilt>
                     <div class="card-3d-inner project-card-home">
-                        <span class="card-label">AI · Full-Stack</span>
+                        <span class="card-label">Computer Vision · ML Ensemble</span>
+                        <h3>ScreenGuard AI – Liveness Detection</h3>
+                        <p>Lightweight on-device CV pipeline &amp; Soft-Voting Ensemble detecting screen-recaptured spoof photos with 94.97% accuracy and &lt;5 ms inference.</p>
+                        <div class="card-tech"><span>Python</span><span>OpenCV</span><span>2D FFT</span><span>LBP</span><span>Scikit-learn</span></div>
+                    </div>
+                </div>
+
+                <!-- Flagship 2: AI Meeting Intelligence System -->
+                <div class="card-3d" data-tilt>
+                    <div class="card-3d-inner project-card-home">
+                        <span class="card-label">AI · Full-Stack Platform</span>
                         <h3>AI Meeting Intelligence System</h3>
-                        <p>Full-stack AI platform for automated meeting transcription, speaker diarization, and business intelligence extraction with Whisper & Gemini.</p>
-                        <div class="card-tech"><span>React.js</span><span>Node.js</span><span>Whisper</span><span>LLaMA</span></div>
+                        <p>End-to-end speech-to-intelligence pipeline integrating Whisper with multi-model LLaMA inference, supporting 15+ customizable summary formats.</p>
+                        <div class="card-tech"><span>React.js</span><span>Node.js</span><span>Whisper</span><span>LLaMA</span><span>FFmpeg</span></div>
                     </div>
                 </div>
+
+                <!-- Core 3: EduRide -->
                 <div class="card-3d" data-tilt>
                     <div class="card-3d-inner project-card-home">
-                        <span class="card-label">Computer Vision</span>
-                        <h3>Face Recognition Attendance</h3>
-                        <p>Real-time face recognition–based attendance system with automated marking and optimized local image processing.</p>
-                        <div class="card-tech"><span>Python</span><span>OpenCV</span><span>Firebase</span></div>
+                        <span class="card-label">MERN Stack · Real-Time</span>
+                        <h3>EduRide – Ride Booking Platform</h3>
+                        <p>Scalable ride-sharing platform with JWT authentication, role-based access control (RBAC), live status tracking, and dynamic fare estimation.</p>
+                        <div class="card-tech"><span>React</span><span>Express</span><span>MongoDB</span><span>JWT</span><span>Socket.IO</span></div>
                     </div>
                 </div>
+
+                <!-- Core 4: Plant Disease Detection -->
                 <div class="card-3d" data-tilt>
                     <div class="card-3d-inner project-card-home">
-                        <span class="card-label">MERN Stack</span>
-                        <h3>EduRide – Ride Sharing</h3>
-                        <p>Scalable ride-sharing platform with authentication, ride booking, live status updates, and map-based fare estimation.</p>
-                        <div class="card-tech"><span>React</span><span>Express</span><span>MongoDB</span><span>JWT</span></div>
+                        <span class="card-label">Deep Learning · CNN</span>
+                        <h3>Plant Disease Detection</h3>
+                        <p>Deep learning CNN model built using TensorFlow to classify 38 plant diseases across 14 crop species, deployed on Streamlit Community Cloud.</p>
+                        <div class="card-tech"><span>Python</span><span>TensorFlow</span><span>CNN</span><span>Streamlit</span></div>
                     </div>
                 </div>
             </div>
             <div class="view-all-link">
-                <a href="projects.html" class="btn-view-all">View All Projects <span class="arrow">→</span></a>
+                <a href="projects.html" class="btn-view-all">View All 8 Projects <span class="arrow">→</span></a>
             </div>
         </div>
     </section>
@@ -95,50 +208,50 @@
     <section class="section" id="about-preview">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Who I Am</span>
+                <span class="section-tag">Engineering Focus</span>
                 <h2 class="section-title">About Me</h2>
             </div>
             <div class="about-home">
                 <div class="about-home-left">
-                    <span class="about-slash">/ ABOUT</span>
-                    <p class="about-intro">I'm Akagra — a CSE (AI) student at <strong>Bennett University</strong>, building at the intersection of full-stack systems and machine learning. I care deeply about clean architecture, meaningful products, and open-source collaboration.</p>
+                    <span class="about-slash">/ BACKGROUND</span>
+                    <p class="about-intro">I'm Akagra — a Computer Science Engineering (AI &amp; ML) undergraduate at <strong>Bennett University</strong> (CGPA: 8.39/10), building at the intersection of full-stack backend systems and applied machine learning. I focus on scalable REST API design, algorithmic problem solving in Java, and efficient on-device AI pipelines.</p>
                     <div class="about-quote-block">
                         <p>"Where curiosity meets code."</p>
                     </div>
                     <div class="about-traits">
-                        <div class="trait">An explorer of systems, driven by curiosity and understanding.</div>
-                        <div class="trait">Deep work on efficiency and precision in every layer built.</div>
-                        <div class="trait">Discipline and dedication in every single line of code.</div>
+                        <div class="trait">Deep focus on algorithmic problem solving (DSA, OOP, System Design).</div>
+                        <div class="trait">Practical experience developing RESTful APIs, JWT authentication, and RBAC.</div>
+                        <div class="trait">Hands-on experience building low-latency computer vision and ML pipelines.</div>
                     </div>
-                    <a href="about.html" class="btn-view-all">View Persona <span class="arrow">→</span></a>
+                    <a href="about.html" class="btn-view-all">View Full Profile <span class="arrow">→</span></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience -->
+    <!-- Education Journey -->
     <section class="section" id="experience">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Education & Work</span>
-                <h2 class="section-title">Experience</h2>
+                <span class="section-tag">Academic Foundation</span>
+                <h2 class="section-title">Education</h2>
             </div>
             <div class="exp-grid">
                 <div class="card-3d" data-tilt>
                     <div class="card-3d-inner exp-card">
-                        <span class="exp-type">EDUCATION</span>
+                        <span class="exp-type">UNDERGRADUATE</span>
                         <h3>Bachelor of Technology</h3>
-                        <p class="exp-sub">Computer Science & Engineering (AI)</p>
-                        <p class="exp-org">Bennett University, Greater Noida</p>
-                        <p class="exp-detail">CGPA: 8.39 · 2023 – 2027</p>
+                        <p class="exp-sub">Computer Science &amp; Engineering (AI &amp; ML)</p>
+                        <p class="exp-org">Bennett University, Greater Noida, UP</p>
+                        <p class="exp-detail">CGPA: 8.39 / 10.0 · 2023 – 2027 (Class of 2027)</p>
                     </div>
                 </div>
                 <div class="card-3d" data-tilt>
                     <div class="card-3d-inner exp-card">
-                        <span class="exp-type">EDUCATION</span>
-                        <h3>Senior Secondary (12th)</h3>
+                        <span class="exp-type">SENIOR SECONDARY</span>
+                        <h3>12th Standard (PCM)</h3>
                         <p class="exp-sub">Science Stream — 80%</p>
-                        <p class="exp-org">C.P. Vidya Niketan, Kaimganj</p>
+                        <p class="exp-org">C.P. Vidya Niketan, Kaimganj, UP</p>
                         <p class="exp-detail">2022 – 2023</p>
                     </div>
                 </div>
@@ -146,26 +259,29 @@
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Reach Out -->
     <section class="section" id="contact">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Skills · Workflow · Identity</span>
+                <span class="section-tag">Let's Connect</span>
                 <h2 class="section-title contact-title">Reach Out</h2>
             </div>
             <div class="contact-bar">
-                <span class="contact-tag">CONNECT</span>
-                <span class="contact-tag">Hit Me Up</span>
+                <span class="contact-tag">STATUS</span>
+                <span class="contact-tag">Available for Internships &amp; Roles</span>
             </div>
             <div class="contact-links">
                 <a href="mailto:akagraace@gmail.com" class="contact-pill">
-                    <span class="pill-icon">✉️</span> Mail
+                    <span class="pill-icon">✉️</span> akagraace@gmail.com
                 </a>
-                <a href="https://github.com/Akagra12" target="_blank" class="contact-pill">
+                <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer" class="contact-pill">
                     <span class="pill-icon">🐙</span> GitHub
                 </a>
-                <a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank" class="contact-pill">
+                <a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank" rel="noopener noreferrer" class="contact-pill">
                     <span class="pill-icon">💼</span> LinkedIn
+                </a>
+                <a href="https://leetcode.com/u/Akagra1/" target="_blank" rel="noopener noreferrer" class="contact-pill">
+                    <span class="pill-icon">💡</span> LeetCode
                 </a>
             </div>
         </div>
@@ -176,9 +292,10 @@
         <div class="container footer-content">
             <p>© 2026 <strong>AKAGRA GANGWAR</strong></p>
             <div class="footer-links">
-                <a href="https://github.com/Akagra12" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank">LinkedIn</a>
-                <a href="https://leetcode.com/u/MrShark01/" target="_blank">LeetCode</a>
+                <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://leetcode.com/u/Akagra1/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+                <a href="mailto:akagraace@gmail.com">Email</a>
             </div>
         </div>
     </footer>

@@ -1,20 +1,55 @@
 // Cursor Glow
-const cg=document.getElementById('cursorGlow');
-document.addEventListener('mousemove',e=>{cg.style.left=e.clientX+'px';cg.style.top=e.clientY+'px'});
+const cg = document.getElementById('cursorGlow');
+if (cg) {
+  document.addEventListener('mousemove', e => {
+    cg.style.left = e.clientX + 'px';
+    cg.style.top = e.clientY + 'px';
+  });
+}
 
 // Particles
-const cv=document.getElementById('particleCanvas'),cx=cv.getContext('2d');
-let pts=[];
-function rz(){cv.width=innerWidth;cv.height=innerHeight}rz();addEventListener('resize',rz);
-class P{constructor(){this.r()}r(){this.x=Math.random()*cv.width;this.y=Math.random()*cv.height;this.s=Math.random()*1.2+.3;this.sx=(Math.random()-.5)*.25;this.sy=(Math.random()-.5)*.25;this.o=Math.random()*.3+.06}
-u(){this.x+=this.sx;this.y+=this.sy;if(this.x<0||this.x>cv.width||this.y<0||this.y>cv.height)this.r()}
-d(){cx.beginPath();cx.arc(this.x,this.y,this.s,0,Math.PI*2);cx.fillStyle=`rgba(0,229,255,${this.o})`;cx.fill()}}
-for(let i=0;i<50;i++)pts.push(new P);
-(function a(){cx.clearRect(0,0,cv.width,cv.height);pts.forEach(p=>{p.u();p.d()});requestAnimationFrame(a)})();
+const cv = document.getElementById('particleCanvas');
+if (cv) {
+  const cx = cv.getContext('2d');
+  let pts = [];
+  function rz() { cv.width = innerWidth; cv.height = innerHeight; }
+  rz();
+  addEventListener('resize', rz);
+  class P {
+    constructor() { this.r(); }
+    r() {
+      this.x = Math.random() * cv.width;
+      this.y = Math.random() * cv.height;
+      this.s = Math.random() * 1.2 + 0.3;
+      this.sx = (Math.random() - 0.5) * 0.25;
+      this.sy = (Math.random() - 0.5) * 0.25;
+      this.o = Math.random() * 0.3 + 0.06;
+    }
+    u() {
+      this.x += this.sx;
+      this.y += this.sy;
+      if (this.x < 0 || this.x > cv.width || this.y < 0 || this.y > cv.height) this.r();
+    }
+    d() {
+      cx.beginPath();
+      cx.arc(this.x, this.y, this.s, 0, Math.PI * 2);
+      cx.fillStyle = `rgba(0,229,255,${this.o})`;
+      cx.fill();
+    }
+  }
+  for (let i = 0; i < 40; i++) pts.push(new P());
+  (function a() {
+    cx.clearRect(0, 0, cv.width, cv.height);
+    pts.forEach(p => { p.u(); p.d(); });
+    requestAnimationFrame(a);
+  })();
+}
 
 // Navbar
-const nb=document.getElementById('navbar');
-addEventListener('scroll',()=>nb.classList.toggle('scrolled',scrollY>50));
+const nb = document.getElementById('navbar');
+if (nb) {
+  addEventListener('scroll', () => nb.classList.toggle('scrolled', scrollY > 50));
+}
 
 // Mobile menu
 const nt=document.getElementById('navToggle'),mm=document.getElementById('mobileMenu');
@@ -53,25 +88,30 @@ document.querySelectorAll('.toggle-btn').forEach(btn=>{
 });
 
 // Filter pills (Credentials page)
-document.querySelectorAll('.pill').forEach(pill=>{
-  pill.addEventListener('click',()=>{
-    document.querySelectorAll('.pill').forEach(p=>p.classList.remove('active'));
+document.querySelectorAll('.filter-pills .pill').forEach(pill => {
+  pill.addEventListener('click', () => {
+    document.querySelectorAll('.filter-pills .pill').forEach(p => p.classList.remove('active'));
     pill.classList.add('active');
-    const filter=pill.dataset.filter;
-    document.querySelectorAll('.cred-entry').forEach(entry=>{
-      entry.style.display=(filter==='all'||entry.dataset.category===filter)?'flex':'none';
+    const filter = pill.dataset.filter;
+    document.querySelectorAll('.cred-entry-card, .cred-entry').forEach(entry => {
+      entry.style.display = (filter === 'all' || entry.dataset.category === filter) ? 'flex' : 'none';
     });
   });
 });
 
-// Skill tabs (Forge page)
-document.querySelectorAll('.skill-tab').forEach(tab=>{
-  tab.addEventListener('click',()=>{
-    document.querySelectorAll('.skill-tab').forEach(t=>t.classList.remove('active'));
-    document.querySelectorAll('.skill-panel').forEach(p=>p.classList.remove('active'));
+// Skill tabs (Skills page)
+document.querySelectorAll('.skill-tabs .skill-tab').forEach(tab => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.skill-tabs .skill-tab').forEach(t => t.classList.remove('active'));
     tab.classList.add('active');
-    const panel=document.getElementById('panel-'+tab.dataset.cat);
-    if(panel) panel.classList.add('active');
+    const cat = tab.dataset.cat;
+    document.querySelectorAll('.skills-catalog-grid .skill-catalog-card').forEach(card => {
+      card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'flex' : 'none';
+    });
+    // Fallback if legacy skill-panel exists
+    document.querySelectorAll('.skill-panel').forEach(p => p.classList.remove('active'));
+    const panel = document.getElementById('panel-' + cat);
+    if (panel) panel.classList.add('active');
   });
 });
 
@@ -173,3 +213,127 @@ if(globeEl){
   }
   drawGlobe();
 }
+
+// Typewriter effect for Hero (Reference Image 2)
+const typeEl = document.getElementById('heroTypewriter');
+if (typeEl) {
+  const roles = [
+    "Full Stack & AI/ML Developer",
+    "Backend Systems Engineer",
+    "Java & Python Developer",
+    "Applied Computer Vision Engineer"
+  ];
+  let roleIdx = 0, charIdx = 0, isDeleting = false;
+  function tickType() {
+    const current = roles[roleIdx];
+    if (isDeleting) {
+      typeEl.textContent = current.substring(0, charIdx - 1);
+      charIdx--;
+    } else {
+      typeEl.textContent = current.substring(0, charIdx + 1);
+      charIdx++;
+    }
+    let speed = isDeleting ? 35 : 75;
+    if (!isDeleting && charIdx === current.length) {
+      speed = 2200; // pause at end of word
+      isDeleting = true;
+    } else if (isDeleting && charIdx === 0) {
+      isDeleting = false;
+      roleIdx = (roleIdx + 1) % roles.length;
+      speed = 350;
+    }
+    setTimeout(tickType, speed);
+  }
+  setTimeout(tickType, 800);
+}
+
+// Project Category Filtering (Phase 3)
+document.querySelectorAll('.project-filters .filter-pill').forEach(pill => {
+  pill.addEventListener('click', () => {
+    document.querySelectorAll('.project-filters .filter-pill').forEach(p => p.classList.remove('active'));
+    pill.classList.add('active');
+    const filter = pill.dataset.filter;
+    document.querySelectorAll('.works-grid .work-card').forEach(card => {
+      const cats = card.dataset.categories ? card.dataset.categories.split(' ') : [];
+      if (filter === 'all' || cats.includes(filter)) {
+        card.style.display = 'flex';
+        card.style.opacity = '1';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  });
+});
+
+// Project Detail Modal (Phase 3)
+const modalBackdrop = document.getElementById('projectModal');
+const modalDialog = document.getElementById('modalContent');
+const modalClose = document.getElementById('modalCloseBtn');
+let lastFocusedElement = null;
+
+function openProjectModal(projectId) {
+  const tpl = document.getElementById('tpl-' + projectId);
+  if (!tpl || !modalBackdrop || !modalDialog) return;
+  lastFocusedElement = document.activeElement;
+  modalDialog.innerHTML = tpl.innerHTML;
+  modalBackdrop.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  if (modalClose) {
+    setTimeout(() => modalClose.focus(), 50);
+  }
+}
+
+function closeProjectModal() {
+  if (!modalBackdrop) return;
+  modalBackdrop.classList.remove('open');
+  document.body.style.overflow = '';
+  if (lastFocusedElement && typeof lastFocusedElement.focus === 'function') {
+    lastFocusedElement.focus();
+  }
+}
+
+document.querySelectorAll('.btn-detail-trigger').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openProjectModal(btn.dataset.project);
+  });
+});
+
+if (modalClose) {
+  modalClose.addEventListener('click', closeProjectModal);
+}
+
+if (modalBackdrop) {
+  modalBackdrop.addEventListener('click', (e) => {
+    if (e.target === modalBackdrop) closeProjectModal();
+  });
+}
+
+document.addEventListener('keydown', (e) => {
+  if (!modalBackdrop || !modalBackdrop.classList.contains('open')) return;
+
+  if (e.key === 'Escape') {
+    closeProjectModal();
+    return;
+  }
+
+  // Focus trap for accessibility
+  if (e.key === 'Tab') {
+    const focusable = modalBackdrop.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+    if (focusable.length === 0) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+
+    if (e.shiftKey) {
+      if (document.activeElement === first) {
+        last.focus();
+        e.preventDefault();
+      }
+    } else {
+      if (document.activeElement === last) {
+        first.focus();
+        e.preventDefault();
+      }
+    }
+  }
+});

@@ -3,156 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forge - Akagra Gangwar</title>
+    <title>Technical Skills &amp; Capabilities — Akagra Gangwar</title>
+    <meta name="description" content="Technical skills and engineering capabilities of Akagra Gangwar. Proficient in Java, Python, JavaScript, React.js, Node.js, Express.js, OpenCV, TensorFlow, Scikit-learn, MongoDB, and modern backend systems.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="pages.css">
 </head>
 <body>
     <div class="cursor-glow" id="cursorGlow"></div>
     <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-center">
             <a href="index.html" class="nav-logo-box">akagra<span class="logo-dot">.</span>dev</a>
             <a href="index.html" class="nav-home" aria-label="Home">⌂</a>
             <a href="projects.html" class="nav-link">PROJECTS</a>
+            <a href="skills.html" class="nav-link active">SKILLS</a>
             <a href="credentials.html" class="nav-link">CREDENTIALS</a>
-            <a href="skills.html" class="nav-link active">FORGE</a>
-            <a href="about.html" class="nav-link">PERSONA</a>
+            <a href="about.html" class="nav-link">ABOUT</a>
+            <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume-btn">RESUME <span class="nav-resume-arrow">↓</span></a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
     </nav>
-    <div class="mobile-menu" id="mobileMenu"><a href="index.html" class="mobile-link">HOME</a><a href="projects.html" class="mobile-link">PROJECTS</a><a href="credentials.html" class="mobile-link">CREDENTIALS</a><a href="skills.html" class="mobile-link">FORGE</a><a href="about.html" class="mobile-link">PERSONA</a></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html" class="mobile-link">HOME</a>
+        <a href="projects.html" class="mobile-link">PROJECTS</a>
+        <a href="skills.html" class="mobile-link">SKILLS</a>
+        <a href="credentials.html" class="mobile-link">CREDENTIALS</a>
+        <a href="about.html" class="mobile-link">ABOUT</a>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="mobile-link mobile-resume-link">RESUME (PDF) ↓</a>
+    </div>
 
-    <section class="page-hero"><div class="container">
-        <span class="section-tag cyan">EXPERTISE</span>
-        <h1 class="page-title-big">Technical Expertise</h1>
-    </div></section>
-
-    <section class="section"><div class="container">
-        <!-- 3D Globe with floating skills -->
-        <div class="globe-section">
-            <canvas id="globeCanvas" class="globe-canvas"></canvas>
-            <div class="floating-skills">
-                <div class="float-skill" style="--x:10%;--y:15%;--delay:0s"><span class="sk-icon">⚛️</span> React.js</div>
-                <div class="float-skill" style="--x:75%;--y:10%;--delay:.5s"><span class="sk-icon">🟢</span> Node.js</div>
-                <div class="float-skill" style="--x:85%;--y:35%;--delay:1s"><span class="sk-icon">🐍</span> Python</div>
-                <div class="float-skill" style="--x:5%;--y:45%;--delay:1.5s"><span class="sk-icon">👁️</span> OpenCV</div>
-                <div class="float-skill" style="--x:60%;--y:55%;--delay:2s"><span class="sk-icon">🍃</span> MongoDB</div>
-                <div class="float-skill" style="--x:20%;--y:65%;--delay:2.5s"><span class="sk-icon">🔥</span> Firebase</div>
-                <div class="float-skill" style="--x:80%;--y:65%;--delay:3s"><span class="sk-icon">🚂</span> Express</div>
-                <div class="float-skill" style="--x:40%;--y:20%;--delay:3.5s"><span class="sk-icon">🎙️</span> Whisper</div>
-                <div class="float-skill" style="--x:15%;--y:80%;--delay:4s"><span class="sk-icon">☕</span> Java</div>
-                <div class="float-skill" style="--x:70%;--y:80%;--delay:4.5s"><span class="sk-icon">🗄️</span> SQL</div>
-                <div class="float-skill" style="--x:50%;--y:75%;--delay:5s"><span class="sk-icon">🔀</span> Git</div>
-                <div class="float-skill" style="--x:90%;--y:50%;--delay:5.5s"><span class="sk-icon">🐳</span> Docker</div>
-                <div class="float-skill" style="--x:30%;--y:40%;--delay:6s"><span class="sk-icon">🦙</span> LLaMA</div>
-                <div class="float-skill" style="--x:55%;--y:40%;--delay:6.5s"><span class="sk-icon">🧠</span> CNN</div>
-                <div class="float-skill" style="--x:45%;--y:90%;--delay:7s"><span class="sk-icon">🔐</span> JWT</div>
-                <div class="float-skill" style="--x:10%;--y:30%;--delay:7.5s"><span class="sk-icon">⚡</span> Vite</div>
-                <div class="float-skill" style="--x:65%;--y:25%;--delay:8s"><span class="sk-icon">✨</span> Gemini</div>
-                <div class="float-skill" style="--x:35%;--y:60%;--delay:8.5s"><span class="sk-icon">🔗</span> REST API</div>
-            </div>
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-tag cyan">TECHNICAL ARSENAL</span>
+            <h1 class="page-title-big">Technical Skills &amp; Stack</h1>
+            <p class="page-sub">Verified technologies and architectural competencies applied across production systems, applied AI, and algorithmic problem solving.</p>
         </div>
+    </section>
 
-        <!-- Tabbed Skill Categories -->
-        <div class="skill-tabs">
-            <button class="skill-tab active" data-cat="foundations"><span class="tab-dot"></span> Foundations</button>
-            <button class="skill-tab" data-cat="languages"><span class="tab-dot"></span> Languages</button>
-            <button class="skill-tab" data-cat="aiml"><span class="tab-dot"></span> AI / ML</button>
-            <button class="skill-tab" data-cat="tools"><span class="tab-dot"></span> Tools</button>
-        </div>
-
-        <div class="skill-panel active" id="panel-foundations">
-            <div class="panel-header">
-                <div class="panel-dot"></div>
-                <div class="panel-info">
-                    <h3>Programming Foundations</h3>
-                    <p>Core concepts that underpin everything — applied across problem-solving, development, and system design.</p>
+    <section class="section" style="padding-top: 10px;">
+        <div class="container">
+            <!-- 3D Globe with Floating Technologies -->
+            <div class="globe-section" aria-hidden="true">
+                <canvas id="globeCanvas" class="globe-canvas"></canvas>
+                <div class="floating-skills">
+                    <div class="float-skill" style="--x:12%;--y:15%;--delay:0s"><span class="sk-icon">☕</span> Java</div>
+                    <div class="float-skill" style="--x:75%;--y:12%;--delay:.5s"><span class="sk-icon">🐍</span> Python</div>
+                    <div class="float-skill" style="--x:85%;--y:35%;--delay:1s"><span class="sk-icon">⚛️</span> React.js</div>
+                    <div class="float-skill" style="--x:6%;--y:45%;--delay:1.5s"><span class="sk-icon">🟢</span> Node.js</div>
+                    <div class="float-skill" style="--x:60%;--y:55%;--delay:2s"><span class="sk-icon">👁️</span> OpenCV</div>
+                    <div class="float-skill" style="--x:18%;--y:65%;--delay:2.5s"><span class="sk-icon">🍃</span> MongoDB</div>
+                    <div class="float-skill" style="--x:80%;--y:65%;--delay:3s"><span class="sk-icon">🚂</span> Express.js</div>
+                    <div class="float-skill" style="--x:42%;--y:18%;--delay:3.5s"><span class="sk-icon">🎙️</span> Whisper</div>
+                    <div class="float-skill" style="--x:15%;--y:80%;--delay:4s"><span class="sk-icon">🗄️</span> SQL</div>
+                    <div class="float-skill" style="--x:72%;--y:82%;--delay:4.5s"><span class="sk-icon">🔀</span> Git</div>
+                    <div class="float-skill" style="--x:35%;--y:38%;--delay:5s"><span class="sk-icon">🦙</span> Groq LLaMA</div>
+                    <div class="float-skill" style="--x:55%;--y:38%;--delay:5.5s"><span class="sk-icon">🧠</span> TensorFlow CNN</div>
+                    <div class="float-skill" style="--x:88%;--y:48%;--delay:6s"><span class="sk-icon">🔐</span> JWT &amp; RBAC</div>
+                    <div class="float-skill" style="--x:45%;--y:88%;--delay:6.5s"><span class="sk-icon">⚡</span> Vite</div>
+                    <div class="float-skill" style="--x:10%;--y:30%;--delay:7s"><span class="sk-icon">🔥</span> Firebase</div>
+                    <div class="float-skill" style="--x:68%;--y:25%;--delay:7.5s"><span class="sk-icon">🎬</span> FFmpeg</div>
                 </div>
-                <span class="panel-count">8 skills</span>
             </div>
-            <div class="panel-tags">
-                <span>Object-Oriented Programming</span>
-                <span>Data Structures</span>
-                <span>Algorithms</span>
-                <span>Complexity Analysis</span>
-                <span>Linear Algebra</span>
-                <span>Probability & Statistics</span>
-                <span>Numerical Methods</span>
-                <span>Computer Organization</span>
-            </div>
-        </div>
 
-        <div class="skill-panel" id="panel-languages">
-            <div class="panel-header">
-                <div class="panel-dot"></div>
-                <div class="panel-info">
-                    <h3>Programming Languages</h3>
-                    <p>Languages I use daily to build production systems and solve algorithmic problems.</p>
+            <!-- Skill Category Filters -->
+            <div class="skill-tabs">
+                <button class="skill-tab active" data-cat="all"><span class="tab-dot"></span> All Categories</button>
+                <button class="skill-tab" data-cat="languages"><span class="tab-dot"></span> Languages</button>
+                <button class="skill-tab" data-cat="frontend"><span class="tab-dot"></span> Frontend</button>
+                <button class="skill-tab" data-cat="backend"><span class="tab-dot"></span> Backend</button>
+                <button class="skill-tab" data-cat="aiml"><span class="tab-dot"></span> AI / ML</button>
+                <button class="skill-tab" data-cat="databases"><span class="tab-dot"></span> Databases</button>
+                <button class="skill-tab" data-cat="tools"><span class="tab-dot"></span> Tools</button>
+            </div>
+
+            <!-- Skills Grid -->
+            <div class="skills-catalog-grid">
+
+                <!-- 1. Programming Languages -->
+                <div class="skill-catalog-card" data-cat="languages">
+                    <div class="catalog-card-header">
+                        <div class="catalog-icon-box">💻</div>
+                        <div>
+                            <h3>Programming Languages</h3>
+                            <span class="catalog-sub">Core algorithmic &amp; system foundations</span>
+                        </div>
+                    </div>
+                    <div class="catalog-pill-cloud">
+                        <span class="pill-badge highlight">Java (Core &amp; OOP)</span>
+                        <span class="pill-badge highlight">Python (NumPy, Scikit)</span>
+                        <span class="pill-badge highlight">JavaScript (ES6+)</span>
+                        <span class="pill-badge">SQL (Relational Queries)</span>
+                        <span class="pill-badge">HTML5</span>
+                        <span class="pill-badge">CSS3 / Modern Flex &amp; Grid</span>
+                    </div>
+                    <p class="catalog-desc">Strong foundational problem-solving in Java (Data Structures &amp; Algorithms on LeetCode) combined with Python for data engineering and modern JavaScript for full-stack applications.</p>
                 </div>
-                <span class="panel-count">5 skills</span>
-            </div>
-            <div class="panel-tags">
-                <span>JavaScript (ES6+)</span>
-                <span>Python</span>
-                <span>Java</span>
-                <span>SQL</span>
-                <span>HTML / CSS</span>
-            </div>
-        </div>
 
-        <div class="skill-panel" id="panel-aiml">
-            <div class="panel-header">
-                <div class="panel-dot"></div>
-                <div class="panel-info">
-                    <h3>AI & Machine Learning</h3>
-                    <p>Building intelligent systems with deep learning, LLMs, computer vision, and generative models.</p>
+                <!-- 2. Frontend Development -->
+                <div class="skill-catalog-card" data-cat="frontend">
+                    <div class="catalog-card-header">
+                        <div class="catalog-icon-box">🎨</div>
+                        <div>
+                            <h3>Frontend Development</h3>
+                            <span class="catalog-sub">Responsive, performant user interfaces</span>
+                        </div>
+                    </div>
+                    <div class="catalog-pill-cloud">
+                        <span class="pill-badge highlight">React.js</span>
+                        <span class="pill-badge highlight">Vite</span>
+                        <span class="pill-badge">Component Architecture</span>
+                        <span class="pill-badge">State Management &amp; Hooks</span>
+                        <span class="pill-badge">Responsive UI / CSS Variables</span>
+                        <span class="pill-badge">DOM Manipulation &amp; Fetch API</span>
+                    </div>
+                    <p class="catalog-desc">Building intuitive, reactive client-side interfaces with React.js and Vite, emphasizing fast render times, clean reusable modular components, and accessible interaction states.</p>
                 </div>
-                <span class="panel-count">9 skills</span>
-            </div>
-            <div class="panel-tags">
-                <span>Deep Learning</span>
-                <span>CNN</span>
-                <span>GANs</span>
-                <span>Whisper</span>
-                <span>LLaMA</span>
-                <span>Gemini</span>
-                <span>OpenCV</span>
-                <span>Face Recognition</span>
-                <span>Emotion Detection</span>
-            </div>
-        </div>
 
-        <div class="skill-panel" id="panel-tools">
-            <div class="panel-header">
-                <div class="panel-dot"></div>
-                <div class="panel-info">
-                    <h3>Tools & Frameworks</h3>
-                    <p>Full-stack frameworks, databases, DevOps tools, and deployment platforms I work with.</p>
+                <!-- 3. Backend & Architecture -->
+                <div class="skill-catalog-card" data-cat="backend">
+                    <div class="catalog-card-header">
+                        <div class="catalog-icon-box">⚙️</div>
+                        <div>
+                            <h3>Backend &amp; Architecture</h3>
+                            <span class="catalog-sub">Scalable server-side systems &amp; security</span>
+                        </div>
+                    </div>
+                    <div class="catalog-pill-cloud">
+                        <span class="pill-badge highlight">Node.js</span>
+                        <span class="pill-badge highlight">Express.js</span>
+                        <span class="pill-badge highlight">RESTful API Design</span>
+                        <span class="pill-badge highlight">JWT Authentication</span>
+                        <span class="pill-badge">Role-Based Access Control (RBAC)</span>
+                        <span class="pill-badge">Socket.IO (WebSockets)</span>
+                        <span class="pill-badge">Middleware Architecture</span>
+                        <span class="pill-badge">AES-256 Key Encryption</span>
+                    </div>
+                    <p class="catalog-desc">Designing robust, secure REST APIs with Node.js and Express. Implemented multi-role RBAC in EduRide and dynamic streaming endpoints in AI Meeting Intelligence.</p>
                 </div>
-                <span class="panel-count">12 skills</span>
-            </div>
-            <div class="panel-tags">
-                <span>React.js</span>
-                <span>Node.js</span>
-                <span>Express.js</span>
-                <span>MongoDB</span>
-                <span>Firebase</span>
-                <span>SQLite</span>
-                <span>Vite</span>
-                <span>Git & GitHub</span>
-                <span>CI/CD</span>
-                <span>Render</span>
-                <span>Postman</span>
-                <span>VS Code</span>
+
+                <!-- 4. AI & Machine Learning -->
+                <div class="skill-catalog-card" data-cat="aiml">
+                    <div class="catalog-card-header">
+                        <div class="catalog-icon-box">🧠</div>
+                        <div>
+                            <h3>AI &amp; Machine Learning</h3>
+                            <span class="catalog-sub">Applied CV, ensembles &amp; LLM pipelines</span>
+                        </div>
+                    </div>
+                    <div class="catalog-pill-cloud">
+                        <span class="pill-badge highlight">OpenCV</span>
+                        <span class="pill-badge highlight">2D Fourier Transform (FFT)</span>
+                        <span class="pill-badge highlight">Local Binary Patterns (LBP)</span>
+                        <span class="pill-badge highlight">Scikit-learn</span>
+                        <span class="pill-badge">Soft-Voting Ensembles</span>
+                        <span class="pill-badge">TensorFlow / Keras CNNs</span>
+                        <span class="pill-badge">OpenAI Whisper</span>
+                        <span class="pill-badge">Groq API (LLaMA)</span>
+                        <span class="pill-badge">ANOVA Feature Selection</span>
+                    </div>
+                    <p class="catalog-desc">Hands-on experience developing low-latency on-device anti-spoofing computer vision models (ScreenGuard AI), speech-to-text intelligence, and crop disease CNN classification.</p>
+                </div>
+
+                <!-- 5. Databases & Storage -->
+                <div class="skill-catalog-card" data-cat="databases">
+                    <div class="catalog-card-header">
+                        <div class="catalog-icon-box">🗄️</div>
+                        <div>
+                            <h3>Databases &amp; Storage</h3>
+                            <span class="catalog-sub">Persistent storage, caching &amp; realtime sync</span>
+                        </div>
+                    </div>
+                    <div class="catalog-pill-cloud">
+                        <span class="pill-badge highlight">MongoDB (NoSQL / Mongoose)</span>
+                        <span class="pill-badge highlight">Firebase Realtime Database</span>
+                        <span class="pill-badge highlight">SQLite (Embedded Development)</span>
+                        <span class="pill-badge">PostgreSQL (Cloud Production)</span>
+                        <span class="pill-badge">Schema Design &amp; Indexing</span>
+                        <span class="pill-badge">ACID Transactions</span>
+                    </div>
+                    <p class="catalog-desc">Architecting persistent document stores in MongoDB, sub-second facial biometric state syncing in Firebase Realtime DB, and multi-environment relational setups.</p>
+                </div>
+
+                <!-- 6. Developer Tools & Platforms -->
+                <div class="skill-catalog-card" data-cat="tools">
+                    <div class="catalog-card-header">
+                        <div class="catalog-icon-box">🛠️</div>
+                        <div>
+                            <h3>Developer Tools &amp; Platforms</h3>
+                            <span class="catalog-sub">Testing, deployment &amp; build workflows</span>
+                        </div>
+                    </div>
+                    <div class="catalog-pill-cloud">
+                        <span class="pill-badge highlight">Git &amp; GitHub</span>
+                        <span class="pill-badge highlight">Postman (API Testing)</span>
+                        <span class="pill-badge highlight">FFmpeg (Audio/Video Pipeline)</span>
+                        <span class="pill-badge">Streamlit Cloud</span>
+                        <span class="pill-badge">Render Deployment</span>
+                        <span class="pill-badge">VS Code</span>
+                        <span class="pill-badge">Linux / Bash CLI</span>
+                    </div>
+                    <p class="catalog-desc">Professional workflow automation with Git version control, rigorous Postman API test collections, programmatic media transcoding via FFmpeg, and cloud deployment pipelines.</p>
+                </div>
+
             </div>
         </div>
-    </div></section>
+    </section>
 
-    <footer class="footer"><div class="container footer-content"><p>© 2026 <strong>AKAGRA GANGWAR</strong></p><div class="footer-links"><a href="https://github.com/Akagra12" target="_blank">GitHub</a><a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank">LinkedIn</a></div></div></footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 <strong>AKAGRA GANGWAR</strong></p>
+            <div class="footer-links">
+                <a href="https://github.com/Akagra12" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/akagra-gangwar-0a6770281" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://leetcode.com/u/Akagra1/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+                <a href="mailto:akagraace@gmail.com">Email</a>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
