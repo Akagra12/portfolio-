@@ -1,6 +1,6 @@
 # Engineering Portfolio — Akagra Gangwar
 
-Modern, recruiter-optimized personal developer portfolio deployed at [akagra.dev](https://akagra.dev).
+Modern, recruiter-optimized personal developer portfolio deployed at [akagra.dev](https://portfolio-akagra12s-projects.vercel.app/?utm_source=chatgpt.com).
 
 Built for technical recruitment targeting **Software Development Engineer (SDE) Intern**, **Backend Developer Intern**, and **Graduate Engineer Trainee** roles.
 
@@ -48,7 +48,7 @@ This project is pre-configured for automated zero-configuration deployment via V
 
 ## 📬 Contact & Links
 
-- **Website:** [akagra.dev](https://akagra.dev)
+- **Website:** [akagra.dev](https://portfolio-akagra12s-projects.vercel.app/?utm_source=chatgpt.com)
 - **LinkedIn:** [linkedin.com/in/akagra-gangwar-0a6770281](https://linkedin.com/in/akagra-gangwar-0a6770281)
 - **GitHub:** [github.com/Akagra12](https://github.com/Akagra12)
 - **LeetCode:** [leetcode.com/u/Akagra1/](https://leetcode.com/u/Akagra1/)
